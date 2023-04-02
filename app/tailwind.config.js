@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       minWidth: {
         'slide': '600px',
+        'menu': '400px',
       }
     },
   },

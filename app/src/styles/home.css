@@ -1,0 +1,16 @@
+#menu.closed {
+    transform: translateX(-100%);
+    pointer-events: none;
+}
+#menu {
+    transform: translateX(0);
+    transition: transform 1s;
+}
+#menu-back.closed {
+    opacity: 0;
+    pointer-events: none;
+}
+#menu-back {
+    opacity: 1;
+    transition: opacity .5s;
+}
