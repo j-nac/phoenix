@@ -1,9 +1,9 @@
-import '../styles/home.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faX } from '@fortawesome/free-solid-svg-icons'
-import peanuts from '../images/roasted-peanuts-jpg-1656535069.jpg';
+import "../../styles/home.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import peanuts from "../../images/roasted-peanuts-jpg-1656535069.jpg";
 
-import $ from 'jquery';
+import $ from "jquery";
 
 const Home = () => {
     return <h1 className="text-3xl font-bold underline">

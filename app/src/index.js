@@ -1,16 +1,16 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout";
-import About from "./pages/About";
-import Booking from "./pages/Booking";
-import Destinations from "./pages/Destinations";
-import Home from "./pages/Home";
-import Info from "./pages/Info";
-import NoPage from "./pages/NoPage";
-import Safety from "./pages/Safety";
-import Technology from "./pages/Technology";
-import Training from "./pages/Training";
-import './index.css';
+import Layout from "./components/pages/Layout";
+import About from "./components/pages/About";
+import Booking from "./components/pages/Booking";
+import Destinations from "./components/pages/Destinations";
+import Home from "./components/pages/Home";
+import Info from "./components/pages/Info";
+import NoPage from "./components/pages/NoPage";
+import Safety from "./components/pages/Safety";
+import Technology from "./components/pages/Technology";
+import Training from "./components/pages/Training";
+import "./index.css";
 
 export default function App() {
   return (
