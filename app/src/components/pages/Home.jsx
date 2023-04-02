@@ -2,6 +2,7 @@ import "../../styles/home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import peanuts from "../../images/roasted-peanuts-jpg-1656535069.jpg";
+import { TitleSlide, BackgroundImageSlide  } from "../organisms/Slides";
 
 import $ from "jquery";
 
@@ -9,9 +10,9 @@ const Home = () => {
     return <h1 className="text-3xl font-bold underline">
       <NavBar openMenu={clicked} />
       <Menu clicked={clicked}/>
-      <Title image={peanuts} />
-      <Slide1 image={peanuts} />
-      <Slide1 image={peanuts} />
+      <TitleSlide main="ASTRAL" sub="TOUCH THE STARS" image={peanuts} position="bottomLeft" />
+      <BackgroundImageSlide main="SPACESHIPS" sub="Ride in Comfort" label="LEARN MORE" link="/" image={peanuts} />
+      <BackgroundImageSlide main="SPACESHIPS" sub="Ride in Comfort" label="LEARN MORE" link="/" image={peanuts} />
     </h1>;
 };
 
@@ -21,7 +22,7 @@ function clicked(){
   $("#open").toggleClass("hide")
   $("#close").toggleClass("hide")
 }
-
+/*
 function Slide1(props){
   return (
     <div className="bg-cover bg-no-repeat min-h-screen min-w-screen" style={{"backgroundImage" : `url(${props.image}`}}>
@@ -40,6 +41,8 @@ function Title(props){
     </div>
   )
 }
+*/
+
 function NavBar(props){
   return(
     <div className='fixed w-screen h-12 z-50 flex justify-between flex-none px-16 top-2 min-w-slide'>
