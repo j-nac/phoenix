@@ -1,25 +1,13 @@
-import { TitleBackgroundImageLabel, BackgroundImageLabel } from "../molecules/TextArea";
-import { FullBackgroundImage } from "../atoms/Images";
-
-function TitleSlide(props) {
-    return (
-    <div>
-        <TitleBackgroundImageLabel main={props.main} sub={props.sub} position={props.position} />
-        <FullBackgroundImage image={props.image} />
-    </div>
-    );
-};
+import { BackgroundImageLabel } from "../molecules/TextArea";
 
 function BackgroundImageSlide(props) {
     return (
-    <div>
-        <FullBackgroundImage image={props.image} />
-        <BackgroundImageLabel main={props.main} sub={props.sub} label={props.label} link={props.link} />
+    <div className="bg-cover bg-no-repeat min-h-screen min-w-screen relative" style={{"backgroundImage" : `url(${props.image}`}}>
+        <BackgroundImageLabel main={props.main} tagline={props.tagline} sub={props.sub} label={props.label} link={props.link} position={props.position} />
     </div>
     );
 };
 
 export {
-    TitleSlide,
     BackgroundImageSlide,
 };

@@ -1,31 +1,24 @@
-import {Header1, Subheader1, Header2, Subheader2} from "../atoms/Text";
+import {Header1, Tagline1, Subphrase1} from "../atoms/Text";
 import { ButtonOutlined1 } from "../atoms/Buttons";
 
-function TitleBackgroundImageLabel(props) {
+function BackgroundImageLabel(props) {
     let positioningClasses = "absolute";
     if (props.position === "bottomLeft") {
-        positioningClasses += " bottom-12 left-12"
+        positioningClasses += " bottom-12 left-12";
+    } else if (props.position === "topLeft") {
+        positioningClasses += " top-20 left-12";
     }
-    
+
     return (
     <div className={positioningClasses}>
-        <Subheader1 text={props.sub} />
+        <Subphrase1 text={props.sub} />
+        <Tagline1 text={props.tagline} />
         <Header1 text={props.main} />
-    </div>
-    )
-};
-
-function BackgroundImageLabel(props) {
-    return (
-    <div>
-        <Subheader2 text={props.sub} />
-        <Header2 text={props.main} />
-        <ButtonOutlined1 label={props.label} link={props.link} />
+        {props.link ? <ButtonOutlined1 label={props.label} link={props.link} /> : null}
     </div>
     );
 };
 
 export {
-    TitleBackgroundImageLabel,
     BackgroundImageLabel,
 };

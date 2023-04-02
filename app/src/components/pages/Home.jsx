@@ -2,7 +2,7 @@ import "../../styles/home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import peanuts from "../../images/roasted-peanuts-jpg-1656535069.jpg";
-import { TitleSlide, BackgroundImageSlide  } from "../organisms/Slides";
+import { BackgroundImageSlide  } from "../organisms/Slides";
 
 import $ from "jquery";
 
@@ -10,9 +10,9 @@ const Home = () => {
     return <h1 className="text-3xl font-bold underline">
       <NavBar openMenu={clicked} />
       <Menu clicked={clicked}/>
-      <TitleSlide main="ASTRAL" sub="TOUCH THE STARS" image={peanuts} position="bottomLeft" />
-      <BackgroundImageSlide main="SPACESHIPS" sub="Ride in Comfort" label="LEARN MORE" link="/" image={peanuts} />
-      <BackgroundImageSlide main="SPACESHIPS" sub="Ride in Comfort" label="LEARN MORE" link="/" image={peanuts} />
+      <BackgroundImageSlide main="ASTRAL" tagline="TOUCH THE STARS" image={peanuts} position="bottomLeft" />
+      <BackgroundImageSlide main="SPACESHIPS" sub="Ride in Comfort" label="LEARN MORE" link="/" image={peanuts} position="bottomLeft" />
+      <BackgroundImageSlide main="DESTINATIONS" label="LEARN MORE" link="/" image={peanuts} position="topLeft" />
     </h1>;
 };
 
@@ -22,26 +22,6 @@ function clicked(){
   $("#open").toggleClass("hide")
   $("#close").toggleClass("hide")
 }
-/*
-function Slide1(props){
-  return (
-    <div className="bg-cover bg-no-repeat min-h-screen min-w-screen" style={{"backgroundImage" : `url(${props.image}`}}>
-
-    </div>
-  )
-}
-
-function Title(props){
-  return(
-    <div className='min-h-screen min-w-screen relative bg-black min-w-slide'>
-      <div className='absolute bottom-12 left-12'>
-        <p className='text-white relative top-6 text-4xl'>TOUCH THE STARS</p>
-        <h1 className='text-white text-9xl'>ASTRAL</h1>
-      </div>
-    </div>
-  )
-}
-*/
 
 function NavBar(props){
   return(
