@@ -8,7 +8,7 @@ import $ from 'jquery';
 const Home = () => {
     return <h1 className="text-3xl font-bold underline">
       <NavBar openMenu={clicked} />
-      <Menu />
+      <Menu clicked={clicked}/>
       <Title image={peanuts} />
       <Slide1 image={peanuts} />
       <Slide1 image={peanuts} />
@@ -53,7 +53,7 @@ function NavBar(props){
 function Menu(props){
   return(
     <>
-      <div className='fixed h-screen w-screen bg-black min-w-slide z-20 backdrop-blur-sm bg-opacity-75 closed' id="menu-back"> </div>
+      <div className='fixed h-screen w-screen bg-black min-w-slide z-20 backdrop-blur-sm bg-opacity-75 closed' id="menu-back" onClick={props.clicked}> </div>
       <div className='fixed h-screen w-1/3 bg-purple z-30 flex items-center justify-end min-w-menu closed' id="menu">
         <div className='h-3/4 bg-white flex items-center w-3/4'>
 
