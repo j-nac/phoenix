@@ -33,7 +33,7 @@ function NavBar(props){
     <div className='fixed w-screen h-12 z-10 flex justify-between flex-none px-4 top-2 min-w-slide'>
       <p className='text-white text-4xl' onClick={props.openMenu()}>=</p>
       <p className='text-white text-4xl'>Logo</p>
-      <p className='px-3 active:text-pink transition-all text-white text-xl relative hover:before:clip-in before:clip-out before:border-4 before:border-white flex justify-center items-center'>
+      <p className='px-3 active:text-pink transition-all text-white text-xl relative hover:before:clip-in active:before:border-pink before:clip-out before:border-4 before:border-white flex justify-center items-center'>
         <span className='align-middle inline-block'>FLY WITH US</span>
       </p>
     </div>
