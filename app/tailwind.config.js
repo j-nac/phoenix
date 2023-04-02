@@ -15,7 +15,11 @@ module.exports = {
       'heading': ['Bebas Neue', 'cursive'],
       'paragraph': ['Barlow', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      minWidth: {
+        'slide': '600px',
+      }
+    },
   },
   plugins: [],
 }

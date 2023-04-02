@@ -20,7 +20,7 @@ function Slide1(props){
 
 function Title(props){
   return(
-    <div className='min-h-screen min-w-screen relative bg-black'>
+    <div className='min-h-screen min-w-screen relative bg-black min-w-slide'>
       <div className='absolute bottom-12 left-12'>
         <p className='text-white relative top-6 text-4xl'>TOUCH THE STARS</p>
         <h1 className='text-white text-9xl'>ASTRAL</h1>
@@ -30,10 +30,10 @@ function Title(props){
 }
 function Menu(props){
   return(
-    <div className='fixed w-screen h-12 z-10 flex justify-between flex-none px-4'>
+    <div className='fixed w-screen h-12 z-10 flex justify-between flex-none px-4 top-2 min-w-slide'>
       <p className='text-white text-4xl'>=</p>
       <p className='text-white text-4xl'>Logo</p>
-      <p className='text-white text-4xl border-4 border-white px-1 hover:border-pink hover:text-pink transition-all'>FLY WITH US</p>
+      <p className='border-4 border-white px-1 hover:border-pink active:text-pink transition-all text-white text-xl'><span className='align-middle'>FLY WITH US</span></p>
     </div>
   )
 }
