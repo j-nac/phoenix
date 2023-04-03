@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import logo from "../../images/logo-1.png"
 
 // Learn more type button
 function ButtonOutlined1(props) {
@@ -20,11 +21,11 @@ function HamburgerIcon(props) {
 }
 
 function MenuSelectPage(props) {
-    return <p className='hover:before:[content:"🡆"] hover:before:opacity-100 before:opacity-0 before:w-8 before:inline-block text-white before:transition-all before:relative before:right-10 hover:before:right-0 after:block after:h-1 after:w-3/4 after:bg-white hover:text-pink transition-color'>{props.label}</p>
+    return <p className='hover:before:[content:"🡆"] hover:before:opacity-100 before:opacity-0 before:w-8 before:inline-block text-white before:transition-all before:relative before:right-10 hover:before:right-0 after:block after:h-1 after:w-3/4 after:bg-white hover:text-pink transition-color text-3xl'>{props.label}</p>
 }
 
 function HomeIcon(props) {
-    return <a className='text-white text-4xl' href={props.homeLink}>Logo</a>
+    return <a className='text-white text-4xl' href={props.homeLink}><img src={logo} alt="" className="h-16"/></a>
 }
 
 export {
