@@ -2,6 +2,7 @@ import '../styles/home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons'
 import peanuts from '../images/roasted-peanuts-jpg-1656535069.jpg';
+import logo from '../images/logo-1.png';
 
 import $ from 'jquery';
 
@@ -44,7 +45,7 @@ function NavBar(props){
   return(
     <div className='fixed w-screen h-12 z-50 flex justify-between flex-none px-16 top-2 min-w-slide'>
       <p className='text-white text-4xl hover:text-pink transition-all' onClick={props.openMenu}><FontAwesomeIcon icon={faBars} id="open"/><FontAwesomeIcon icon={faX} id="close" className="hide"/></p>
-      <a className='text-white text-4xl' href="#root">Logo</a>
+      <a className='text-white' href="#root"><img className="h-24" src={logo} alt=""/></a>
       <p className='px-1 transition-all text-white text-lg relative hover:text-pink hover:before:clip-in before:clip-out before:bg-white flex justify-center items-center before:rounded-sm'>
         <span className='relative z-60 align-middle inline-block'>FLY WITH US</span>
       </p>
