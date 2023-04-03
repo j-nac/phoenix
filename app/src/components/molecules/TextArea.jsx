@@ -17,7 +17,7 @@ function BackgroundImageLabel(props) {
         {props.link ? <ButtonOutlined1 label={props.label} link={props.link} /> : null}
     </div>
     );
-};
+}
 
 export {
     BackgroundImageLabel,
