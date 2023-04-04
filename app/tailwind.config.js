@@ -19,7 +19,10 @@ module.exports = {
       minWidth: {
         'slide': '600px',
         'menu': '400px',
-      }
+      },
+      minHeight: {
+        'slide': '600px',
+      },
     },
   },
   plugins: [],
