@@ -25,7 +25,7 @@ function BackgroundImageLabel(props) {
 function QuoteArea(props){
     return (
         <div className="before:w-full before:h-2 after:w-full after:h-2 after:bg-white after:absolute relative after:bottom-[15%] before:bg-white before:absolute before:top-[15%] h-full lg:h-3/4 w-1/2">
-            <div className="flex flex-col justify-between absolute top-[20%] h-1/2 md:h-1/2 w-full overflow-scroll">
+            <div className="flex flex-col justify-between absolute top-[20%] h-[60%] w-full overflow-scroll">
                 <Quote text={props.quote} />
                 <div>
                     <Author text={props.author} />
@@ -36,7 +36,7 @@ function QuoteArea(props){
     )
 }
 function QuoteHeader(props){
-    return <h1 className="text-white text-center text-5xl md:text-7xl pt-6 max-h-[10%]">{props.text}</h1>
+    return <h1 className="text-white text-center text-3xl md:text-5xl pt-2 max-h-[10%]">{props.text}</h1>
 }
 
 export {
