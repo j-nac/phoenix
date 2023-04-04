@@ -3,7 +3,7 @@ import { QuoteImage } from "../molecules/ImageArea";
 
 function BackgroundImageSlide(props) {
     return (
-    <div className="bg-cover bg-no-repeat min-h-screen w-screen min-w-slide min-h-slide relative" style={{"backgroundImage" : props.background}}>
+    <div className="bg-cover bg-no-repeat min-h-screen w-screen min-w-slide min-h-slide relative h-screen" style={{"backgroundImage" : props.background}}>
         <BackgroundImageLabel main={props.main} tagline={props.tagline} sub={props.sub} label={props.label} link={props.link} position={props.position} description={props.description} />
     </div>
     );
