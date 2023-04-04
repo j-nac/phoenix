@@ -1,4 +1,4 @@
-import {Header1, Tagline1, Subphrase1} from "../atoms/Text";
+import {Header1, Tagline1, Subphrase1, BackgroundImageDescription} from "../atoms/Text";
 import { ButtonOutlined1 } from "../atoms/Buttons";
 
 function BackgroundImageLabel(props) {
@@ -10,12 +10,15 @@ function BackgroundImageLabel(props) {
     }
 
     return (
-    <div className={positioningClasses}>
-        <Subphrase1 text={props.sub} />
-        <Tagline1 text={props.tagline} />
-        <Header1 text={props.main} />
-        {props.link ? <ButtonOutlined1 label={props.label} link={props.link} /> : null}
-    </div>
+    <>
+        <div className={positioningClasses}>
+            <Subphrase1 text={props.sub} />
+            <Tagline1 text={props.tagline} />
+            <Header1 text={props.main} />
+            {props.link ? <ButtonOutlined1 label={props.label} link={props.link} /> : null}
+        </div>
+        {props.description ? <BackgroundImageDescription description={props.description} /> : null}
+    </>
     );
 }
 
