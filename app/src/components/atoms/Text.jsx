@@ -29,6 +29,15 @@ function Title(props){
 function QuoteHeader(props){
     return <h1 className="text-white text-center text-3xl md:text-5xl pt-2 max-h-[10%]">{props.text}</h1>
 }
+function Subphrase2(props){
+    return <h2 className="text-md pt-5 px-3 text-white">{props.text}</h2>
+}
+function Header2(props){
+    return <h1 className="text-6xl px-3 text-white">{props.text}</h1>
+}
+function Paragraph(props){
+    return <p className="text-xl text-white py-6 px-3 min-h-48 after:clear-both after:block">{props.img}{props.text}</p>
+}
 
 export {
     Header1,
@@ -39,4 +48,7 @@ export {
     Title,
     Quote,
     QuoteHeader,
+    Subphrase2,
+    Header2,
+    Paragraph,
 };

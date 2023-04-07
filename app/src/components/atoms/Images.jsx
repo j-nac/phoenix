@@ -13,7 +13,13 @@ function BackgroundImage(props){
     return <img className="h-screen w-screen min-w-slide min-h-slide absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 object-cover sm:hidden" src={props.img} alt=""/>
 }
 
+function ParagraphImage(props){
+    return <img className="float-right w-48 mx-8" src={props.src} alt=""/>
+}
+
 export {
     QuoteImg,
     BackgroundVideo,
+    BackgroundImage,
+    ParagraphImage,
 }

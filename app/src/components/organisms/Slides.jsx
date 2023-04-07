@@ -1,6 +1,7 @@
 import { BackgroundImageLabel, QuoteArea } from "../molecules/TextArea";
 import { QuoteImage, VideoBackGround } from "../molecules/ImageArea";
-import { QuoteHeader } from "../atoms/Text"
+import { QuoteHeader, Header2, Subphrase2, Paragraph } from "../atoms/Text"
+import { ParagraphImage } from "../atoms/Images"
 
 function BackgroundImageSlide(props) {
     return (
@@ -22,9 +23,18 @@ function QuoteSlide(props) {
 };
 function VideoSlide(props){
     return (
-        <div className="min-h-screen w-screen min-w-slide min-h-slide relative h-screen">
+        <div className="h-screen w-screen min-w-slide min-h-slide relative overflow-hidden">
             <VideoBackGround file={props.file} altimg={props.altimg} />
             <BackgroundImageLabel main={props.main} tagline={props.tagline} sub={props.sub} label={props.label} link={props.link} position={props.position} description={props.description} />
+        </div>
+    )
+}
+function TextSlide(props){
+    return (
+        <div className="w-screen min-w-slide relative bg-black">
+            <Subphrase2 text = {props.subheader} />
+            <Header2 text = {props.header} />
+            <Paragraph img = {<ParagraphImage src = {props.src} />} text = {props.paragraph} />
         </div>
     )
 }
@@ -33,4 +43,5 @@ export {
     BackgroundImageSlide,
     QuoteSlide,
     VideoSlide,
+    TextSlide,
 };
