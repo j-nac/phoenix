@@ -26,6 +26,9 @@ function Author(props){
 function Title(props){
     return <p className="text-sm lg:text-md xl:text-xl text-purple ml-6">{props.text}</p>
 }
+function QuoteHeader(props){
+    return <h1 className="text-white text-center text-3xl md:text-5xl pt-2 max-h-[10%]">{props.text}</h1>
+}
 
 export {
     Header1,
@@ -35,4 +38,5 @@ export {
     Author,
     Title,
     Quote,
+    QuoteHeader,
 };

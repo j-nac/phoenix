@@ -4,15 +4,13 @@ import peanuts1 from "../../images/peanuts-1.jpg";
 import { BackgroundImageSlide, QuoteSlide  } from "../organisms/Slides";
 import { TopMenu, HamburgerMenu } from "../organisms/NavElements";
 
-import $ from "jquery";
-
 const Home = () => {
     return (
     <>
-        <TopMenu openMenu={clicked} homeLink={"#root"} goLabel="FLY WITH US" />
-        <HamburgerMenu clicked={clicked}/>
+        <TopMenu homeLink={"#root"} goLabel="FLY WITH US" />
+        <HamburgerMenu />
         <BackgroundImageSlide main="ASTRAL" tagline="TOUCH THE STARS" background={`linear-gradient(rgba(0,0,0,0) 98%, black 101%), url(${peanuts1}`} position="bottomLeft" />
-        <BackgroundImageSlide main="SPACESHIPS" sub="Ride in Comfort" label="LEARN MORE" link="/" background={`linear-gradient(rgba(0,0,0,0) 98%, black 101%), url(${peanuts}`} position="bottomLeft" />
+        <BackgroundImageSlide main="SPACESHIPS" sub="Ride in Comfort" label="LEARN MORE" link="/ships" background={`linear-gradient(rgba(0,0,0,0) 98%, black 101%), url(${peanuts}`} position="bottomLeft" />
         <BackgroundImageSlide main="DESTINATIONS" label="LEARN MORE" link="/" background={`linear-gradient(rgba(0,0,0,0) 98%, black 101%), url(${peanuts}`} position="topLeft" description="A short description, no longer than a paragraph"/>
         <QuoteSlide quote="Astral lies at the bleeding edge of innovation, bringing science fiction to life." author="Aaron Donson" title="Former NASA engineer and reporter for the Springfield Inquirer" image={peanuts} header="A Revolution in Travel"/>
         <BackgroundImageSlide main="TRAINING" label="LEARN MORE" link="/" background={`linear-gradient(black -1%, rgba(0,0,0,0) 2%, rgba(0,0,0,0) 98%, black 101%), url(${peanuts}`} position="topLeft" description="A short description, no longer than 2 sentences." />
@@ -21,12 +19,5 @@ const Home = () => {
     </>
     );
 };
-
-function clicked() {
-    $("#menu").toggleClass("closed")
-    $("#menu-back").toggleClass("closed")
-    $("#open").toggleClass("hide")
-    $("#close").toggleClass("hide")
-}
   
 export default Home;

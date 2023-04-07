@@ -21,7 +21,7 @@ function HamburgerIcon(props) {
 }
 
 function MenuSelectPage(props) {
-    return <p className='hover:before:[content:"➤"] hover:before:opacity-100 before:opacity-0 before:w-8 before:inline-block text-white before:transition-all before:relative before:right-10 hover:before:right-0 after:block after:h-1 after:w-3/4 after:bg-white hover:text-pink transition-color text-3xl'>{props.label}</p>
+    return <a className='hover:before:[content:"➤"] hover:before:opacity-100 before:opacity-0 before:w-8 before:inline-block text-white before:transition-all before:relative before:right-10 hover:before:right-0 after:block after:h-1 after:w-3/4 after:bg-white hover:text-pink transition-color text-3xl' href={props.link}>{props.label}</a>
 }
 
 function HomeIcon(props) {

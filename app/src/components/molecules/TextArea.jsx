@@ -35,12 +35,8 @@ function QuoteArea(props){
         </div>
     )
 }
-function QuoteHeader(props){
-    return <h1 className="text-white text-center text-3xl md:text-5xl pt-2 max-h-[10%]">{props.text}</h1>
-}
 
 export {
     BackgroundImageLabel,
     QuoteArea,
-    QuoteHeader,
 };

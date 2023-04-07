@@ -1,5 +1,6 @@
-import { BackgroundImageLabel, QuoteArea, QuoteHeader } from "../molecules/TextArea";
-import { QuoteImage } from "../molecules/ImageArea";
+import { BackgroundImageLabel, QuoteArea } from "../molecules/TextArea";
+import { QuoteImage, VideoBackGround } from "../molecules/ImageArea";
+import { QuoteHeader } from "../atoms/Text"
 
 function BackgroundImageSlide(props) {
     return (
@@ -19,8 +20,17 @@ function QuoteSlide(props) {
     </div>
     );
 };
+function VideoSlide(props){
+    return (
+        <div className="min-h-screen w-screen min-w-slide min-h-slide relative h-screen">
+            <VideoBackGround file={props.file} altimg={props.altimg} />
+            <BackgroundImageLabel main={props.main} tagline={props.tagline} sub={props.sub} label={props.label} link={props.link} position={props.position} description={props.description} />
+        </div>
+    )
+}
 
 export {
     BackgroundImageSlide,
     QuoteSlide,
+    VideoSlide,
 };

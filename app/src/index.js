@@ -7,7 +7,7 @@ import Destinations from "./components/pages/Destinations";
 import Home from "./components/pages/Home";
 import Info from "./components/pages/Info";
 import NoPage from "./components/pages/NoPage";
-import Safety from "./components/pages/Safety";
+import Ships from "./components/pages/Ships";
 import Technology from "./components/pages/Technology";
 import Training from "./components/pages/Training";
 import "./index.css";
@@ -23,7 +23,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="info" element={<Info />} />
           <Route path="*" element={<NoPage />} />
-          <Route path="safety" element={<Safety />} />
+          <Route path="ships" element={<Ships />} />
           <Route path="technology" element={<Technology />} />
           <Route path="training" element={<Training />} />
         </Route>
