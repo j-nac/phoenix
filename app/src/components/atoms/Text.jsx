@@ -36,7 +36,9 @@ function Header2(props){
     return <h1 className="text-6xl px-3 text-white">{props.text}</h1>
 }
 function Paragraph(props){
-    return <p className="text-xl text-white py-6 px-3 min-h-48 after:clear-both after:block">{props.img}{props.text}</p>
+    let text = [];
+    props.text.forEach(e=>{text.push(e); text.push(<><br /><br /></>)})
+    return <p className="text-xl text-white py-6 px-3 min-h-48 after:clear-both after:block">{props.img}{text}</p>
 }
 
 export {

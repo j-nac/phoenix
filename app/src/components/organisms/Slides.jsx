@@ -31,7 +31,7 @@ function VideoSlide(props){
 }
 function TextSlide(props){
     return (
-        <div className="w-screen min-w-slide relative bg-black">
+        <div className="w-screen min-w-slide relative bg-black px-[15%] py-5">
             <Subphrase2 text = {props.subheader} />
             <Header2 text = {props.header} />
             <Paragraph img = {<ParagraphImage src = {props.src} />} text = {props.paragraph} />
