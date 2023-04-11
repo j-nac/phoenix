@@ -1,6 +1,6 @@
 import { BackgroundImageLabel, QuoteArea, SlideParagraph, DescContainer } from "../molecules/TextArea";
 import { QuoteImage, VideoBackGround } from "../molecules/ImageArea";
-import { QuoteHeader, Header2, Subphrase2, Header3 } from "../atoms/Text"
+import { QuoteHeader, Header2, Subphrase2, Header3, Subphrase3 } from "../atoms/Text"
 
 function BackgroundImageSlide(props) {
     return (
@@ -33,13 +33,14 @@ function TextSlide(props){
         <div className="w-screen min-w-slide relative bg-black px-[15%] py-5">
             <Subphrase2 text = {props.subheader} />
             <Header2 text = {props.header} />
-            <SlideParagraph text={props.paragraph} />
+            <SlideParagraph text={props.paragraph} src={props.src} />
         </div>
     )
 }
 function ImageDescribedSlide(props){
     return (
         <div className="w-screen min-w-slide relative bg-black px-[15%] py-5">
+            <Subphrase3 text = {props.subheader} />
             <Header3 text = {props.header} />
             <DescContainer text1 = {props.text1} text2 = {props.text2} src={props.src} />
         </div>

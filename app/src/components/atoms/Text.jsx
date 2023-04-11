@@ -24,32 +24,35 @@ function Author(props){
 }
 
 function Title(props){
-    return <p className="text-sm lg:text-md xl:text-xl text-purple ml-6">{props.text}</p>
+    return <p className="text-sm lg:text-base xl:text-xl text-purple ml-6">{props.text}</p>
 }
 function QuoteHeader(props){
     return <h1 className="text-white text-center text-3xl md:text-5xl pt-2 max-h-[10%]">{props.text}</h1>
 }
 function Subphrase2(props){
-    return <h2 className="text-md pt-5 px-3 text-white">{props.text}</h2>
+    return <h2 className="text-base pt-5 px-3 text-white font-paragraph">{props.text}</h2>
 }
 function Header2(props){
-    return <h1 className="text-6xl px-3 text-white">{props.text}</h1>
+    return <h1 className="text-6xl px-3 text-white font-heading">{props.text}</h1>
 }
 function Paragraph(props){
     let text = [];
     props.text.forEach(e=>{text.push(e); text.push(<><br /><br /></>)})
-    return <p className="text-xl text-white px-3 min-h-48 after:clear-both after:block">{text}</p>
+    return <p className="font-paragraph text-sm md:text-base text-white px-3 min-h-48 after:clear-both after:block">{text}</p>
 }
 
 function Header3(props){
-    return <h1 className="text-5xl px-3 text-white text-right">{props.text}</h1>
+    return <h1 className="text-5xl px-3 text-white text-right font-heading">{props.text}</h1>
 }
 
 function ImageText(props){
-    let cl = "text-md md:text-xl text-white md:w-1/4 px-2 py-4"
+    let cl = "text-sm font-paragraph md:text-base text-white md:w-1/4 px-2 py-4"
     if(props.position === "top") cl += " mb-auto mt-4"
     else cl += " mt-auto mb-4"
     return <h1 className = {cl}>{props.text}</h1>
+}
+function Subphrase3(props){
+    return <h2 className="text-lg pt-5 px-3 text-white font-paragraph text-right">{props.text}</h2>
 }
 
 export {
@@ -66,4 +69,5 @@ export {
     Paragraph,
     Header3,
     ImageText,
+    Subphrase3,
 };

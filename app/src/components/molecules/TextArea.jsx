@@ -27,7 +27,7 @@ function BackgroundImageLabel(props) {
 function QuoteArea(props){
     return (
         <div className="before:w-full before:h-2 after:w-full after:h-2 after:bg-white after:absolute relative after:bottom-[15%] before:bg-white before:absolute before:top-[15%] h-full lg:h-3/4 w-1/2">
-            <div className="flex flex-col justify-between absolute top-[20%] h-[60%] w-full overflow-scroll">
+            <div className="flex flex-col justify-around absolute top-[20%] h-[60%] w-full overflow-scroll scrollbar-hide">
                 <Quote text={props.quote} />
                 <div>
                     <Author text={props.author} />
@@ -41,8 +41,9 @@ function QuoteArea(props){
 function SlideParagraph(props){
     return (
         <>
-            <div className="flex w-full md:flex-row flex-col items-center py-16">
+            <div className="flex justify-between py-6">
                 <Paragraph text = {props.text} />
+                <ParagraphImage src={props.src} />
             </div>
             <hr className="text-white"/>
         </>
