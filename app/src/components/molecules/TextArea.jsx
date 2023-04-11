@@ -43,7 +43,6 @@ function SlideParagraph(props){
         <>
             <div className="flex w-full md:flex-row flex-col items-center py-16">
                 <Paragraph text = {props.text} />
-                <ParagraphImage src = {props.src} />
             </div>
             <hr className="text-white"/>
         </>

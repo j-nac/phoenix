@@ -8,7 +8,7 @@ module.exports = {
       'pink': '#cc4365',
       'magenta': '#872e62',
       'purple': '#42195e',
-      'black': '#0f1020',
+      'black': '#09070f',
       'white': '#f9f7f1',
     },
     fontFamily: {

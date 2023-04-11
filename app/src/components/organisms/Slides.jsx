@@ -33,7 +33,7 @@ function TextSlide(props){
         <div className="w-screen min-w-slide relative bg-black px-[15%] py-5">
             <Subphrase2 text = {props.subheader} />
             <Header2 text = {props.header} />
-            <SlideParagraph text={props.paragraph} src={props.src} />
+            <SlideParagraph text={props.paragraph} />
         </div>
     )
 }
