@@ -1,7 +1,7 @@
 import {Header1, Tagline1, Subphrase1, BackgroundImageDescription, Quote, Author, Title} from "../atoms/Text";
 import { ButtonOutlined1 } from "../atoms/Buttons";
-import { Paragraph } from "../atoms/Text"
-import { ParagraphImage } from "../atoms/Images"
+import { Paragraph, ImageText } from "../atoms/Text"
+import { ParagraphImage, DescribedImage } from "../atoms/Images"
 
 function BackgroundImageLabel(props) {
     let positioningClasses = "absolute";
@@ -50,8 +50,19 @@ function SlideParagraph(props){
     )
 }
 
+function DescContainer(props){
+    return (
+        <div className="flex flex-col md:flex-row items-center py-8">
+            <ImageText position="top" text={props.text1} />
+            <DescribedImage src={props.src} />
+            <ImageText position="bot" text={props.text2} />
+        </div>
+    )
+}
+
 export {
     BackgroundImageLabel,
     QuoteArea,
     SlideParagraph,
+    DescContainer,
 };

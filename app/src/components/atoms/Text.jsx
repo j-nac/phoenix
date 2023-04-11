@@ -41,6 +41,17 @@ function Paragraph(props){
     return <p className="text-xl text-white px-3 min-h-48 after:clear-both after:block">{text}</p>
 }
 
+function Header3(props){
+    return <h1 className="text-5xl px-3 text-white text-right">{props.text}</h1>
+}
+
+function ImageText(props){
+    let cl = "text-md md:text-xl text-white md:w-1/4 px-2 py-4"
+    if(props.position === "top") cl += " mb-auto mt-4"
+    else cl += " mt-auto mb-4"
+    return <h1 className = {cl}>{props.text}</h1>
+}
+
 export {
     Header1,
     Tagline1,
@@ -53,4 +64,6 @@ export {
     Subphrase2,
     Header2,
     Paragraph,
+    Header3,
+    ImageText,
 };
