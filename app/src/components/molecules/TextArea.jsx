@@ -1,5 +1,7 @@
 import {Header1, Tagline1, Subphrase1, BackgroundImageDescription, Quote, Author, Title} from "../atoms/Text";
 import { ButtonOutlined1 } from "../atoms/Buttons";
+import { Paragraph } from "../atoms/Text"
+import { ParagraphImage } from "../atoms/Images"
 
 function BackgroundImageLabel(props) {
     let positioningClasses = "absolute";
@@ -36,7 +38,20 @@ function QuoteArea(props){
     )
 }
 
+function SlideParagraph(props){
+    return (
+        <>
+            <div className="flex w-full md:flex-row flex-col items-center py-16">
+                <Paragraph text = {props.text} />
+                <ParagraphImage src = {props.src} />
+            </div>
+            <hr className="text-white"/>
+        </>
+    )
+}
+
 export {
     BackgroundImageLabel,
     QuoteArea,
+    SlideParagraph,
 };
