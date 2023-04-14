@@ -4,7 +4,7 @@ import logo from "../../images/logo-1.png"
 
 // Learn more type button
 function ButtonOutlined1(props) {
-    return <a href={props.link} className="inline-block border-4 p-3 text-white text-2xl font-heading">{props.label}</a>
+    return <a href={props.link} className="inline-block border-4 p-3 text-white text-2xl font-heading hover:text-pink hover:border-pink transition-all">{props.label}</a>
 }
 
 // Menu fly with us type button

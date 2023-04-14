@@ -18,7 +18,7 @@ function HamburgerMenu(props){
         <div className='fixed h-screen w-1/3 bg-gradient-to-t from-black to-purple z-30 flex justify-end min-w-menu closed' id="menu">
             <div className='h-1/2 flex justify-between flex-col w-3/4 mt-16'>
                 <MenuSelectPage label="Home" link="/"/>
-                <MenuSelectPage label="Spacecraft" link="/ships"/>
+                <MenuSelectPage label="Spaceships" link="/ships"/>
                 <MenuSelectPage label="Destinations" link="/destinations" />
                 <MenuSelectPage label="Training" link="/training" />
                 <MenuSelectPage label="About" link="/about" />
