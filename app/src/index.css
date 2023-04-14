@@ -16,6 +16,13 @@
         clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
         transform: rotate(180deg);
     }
+    .rev-out{
+        clip-path:polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+    .rev-in{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        border-radius: 1px;
+    }
     .scrollbar-hide::-webkit-scrollbar {
         display: none;
     }

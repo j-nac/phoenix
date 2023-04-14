@@ -28,10 +28,15 @@ function HomeIcon(props) {
     return <a className='text-white text-4xl' href={props.homeLink}><img src={logo} alt="" className="h-16"/></a>
 }
 
+function TopMenuSelect(props){
+    return <a className="text-white font-paragraph text-xl after:h-1 after:w-full after:bg-white after:block after:transition-all hover:after:rev-in after:rev-out" href={props.link}>{props.label}</a>
+}
+
 export {
     ButtonOutlined1,
     ButtonOutlined2,
     HamburgerIcon,
     MenuSelectPage,
     HomeIcon,
+    TopMenuSelect,
 }
