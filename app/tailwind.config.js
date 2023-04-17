@@ -9,7 +9,7 @@ module.exports = {
       'magenta': '#872e62',
       'purple': '#42195e',
       'black': '#09070f',
-      'black-glass': 'rgba(9,7,15,.75)',
+      'black-glass': 'rgba(9,7,15,.5)',
       'white': '#f9f7f1',
     },
     fontFamily: {

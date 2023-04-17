@@ -16,15 +16,15 @@ function BackgroundImageDescription(props){
     )
 }
 function Quote(props){
-    return <p className="text-xl lg:text-3xl xl:text-5xl text-white">"{props.text}"</p>
+    return <p className="text-xl lg:text-3xl xl:text-5xl text-white mt-4">"{props.text}"</p>
 }
 
 function Author(props){
-    return <p className="text-md lg:text-xl xl:text-3xl text-pink">- {props.text}</p>
+    return <p className="text-md lg:text-xl xl:text-3xl text-pink mt-4">- {props.text}</p>
 }
 
 function Title(props){
-    return <p className="text-sm lg:text-base xl:text-xl text-purple ml-6">{props.text}</p>
+    return <p className="text-sm lg:text-base xl:text-xl text-purple ml-6 my-4">{props.text}</p>
 }
 function QuoteHeader(props){
     return <h1 className="text-white text-center text-3xl md:text-5xl pt-2 max-h-[10%]">{props.text}</h1>

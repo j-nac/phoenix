@@ -22,6 +22,7 @@
     .rev-in{
         clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
         border-radius: 1px;
+        transition: clip-path .075s;
     }
     .scrollbar-hide::-webkit-scrollbar {
         display: none;

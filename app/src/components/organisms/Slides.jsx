@@ -11,9 +11,9 @@ function BackgroundImageSlide(props) {
 };
 function QuoteSlide(props) {
     return (
-    <div className="bg-black h-screen w-screen min-h-slide min-w-slide">
+    <div className="bg-black w-screen p-3 min-w-slide">
         <QuoteHeader text={props.header}/>
-        <div className="flex items-center justify-around h-[90%] w-full">
+        <div className="flex items-center justify-around w-full items-stretch mt-6 mb-6 md:mt-12 md:mb-16">
             <QuoteImage image={props.image}/>
             <QuoteArea quote={props.quote} author={props.author} title={props.title} />
         </div>
