@@ -29,7 +29,7 @@ function HomeIcon(props) {
 }
 
 function TopMenuSelect(props){
-    return <a className="text-white font-paragraph text-xl after:h-1 after:w-full after:bg-pink after:block hover:after:rev-in after:rev-out" href={props.link}>{props.label}</a>
+    return <a className="text-white font-paragraph text-xl after:h-1 after:w-full after:bg-pink after:block after:scale-x-0 hover:after:scale-x-100 after:origin-right hover:after:origin-left after:transition-transform" href={props.link}>{props.label}</a>
 }
 
 export {
