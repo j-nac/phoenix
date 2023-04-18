@@ -3,7 +3,7 @@ import $ from "jquery";
 
 function TopMenu(props) {
     return (
-        <div className="sticky top-0 h-12 bg-black-glass z-50 items-center justify-around hidden md:flex">
+        <div className="sticky top-0 h-16 bg-black-glass z-50 items-end justify-around hidden md:flex pb-3">
             <TopMenuSelect label="HOME" link="/" />
             <TopMenuSelect label="SPACESHIPS" link="/ships" />
             <TopMenuSelect label="DESTINATIONS" link="/" />
@@ -30,11 +30,11 @@ function HamburgerMenu(props){
         <div className='fixed h-screen w-screen bg-black min-w-slide z-20 backdrop-blur-sm bg-opacity-75 closed md:hidden' id="menu-back" onClick={clicked}> </div>
         <div className='fixed h-screen w-1/3 bg-gradient-to-t from-black to-purple z-30 flex justify-end min-w-menu closed md:hidden' id="menu">
             <div className='h-1/2 flex justify-between flex-col w-3/4 mt-16'>
-                <MenuSelectPage label="Home" link="/"/>
-                <MenuSelectPage label="Spaceships" link="/ships"/>
-                <MenuSelectPage label="Destinations" link="/destinations" />
-                <MenuSelectPage label="Training" link="/training" />
-                <MenuSelectPage label="About" link="/about" />
+                <MenuSelectPage label="HOME" link="/"/>
+                <MenuSelectPage label="SPACESHIPS" link="/ships"/>
+                <MenuSelectPage label="DESTINATIONS" link="/destinations" />
+                <MenuSelectPage label="TRAINING" link="/training" />
+                <MenuSelectPage label="ABOUT" link="/about" />
             </div>
         </div>
     </>
