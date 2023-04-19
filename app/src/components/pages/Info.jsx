@@ -8,7 +8,10 @@ const Info = () => {
   <p>Optimized-christina-wocintechchat-com-faEfWCdOKIg-unsplash.jpg Photo by <a href="https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christina @ wocintechchat.com</a> on <a href="https://unsplash.com/photos/faEfWCdOKIg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   </p>
   <p>https://svs.gsfc.nasa.gov/13537 NASA moon video</p>
+  <p>https://images.nasa.gov/details/s84-36901 s84-36901~medium.jpg NASA diving training video</p>
+  <p>https://images.nasa.gov/details/KSC-20200302-PH-KLS01_0011 KSC-20200302-PH-KLS01_0011~medium.jpg NASA safety training video</p>
   </>
+  
 };
 
 export default Info;
