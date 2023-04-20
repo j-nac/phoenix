@@ -27,7 +27,7 @@ function Title(props){
     return <p className="text-sm lg:text-base xl:text-xl text-white ml-6 my-4 appear font-paragraph">{props.text}</p>
 }
 function QuoteHeader(props){
-    return <h1 className="text-white text-center text-3xl md:text-9xl pt-2 max-h-[20%] appear font-heading">{props.text}</h1>
+    return <h1 className="text-white text-center text-3xl md:text-9xl pt-2 mt-12 max-h-[20%] appear font-heading">{props.text}</h1>
 }
 function Subphrase2(props){
     return <h2 className="text-base pt-5 px-3 text-white font-paragraph appear">{props.text}</h2>

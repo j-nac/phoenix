@@ -4,7 +4,7 @@ import logo from "../../images/logo-1.png"
 
 // Learn more type button
 function ButtonOutlined1(props) {
-    return <a href={props.link} className="inline-block text-white hover:before:text-pink hover:after:text-pink before:ease-in-out after:ease-in-out p-2 text-2xl font-heading relative before:absolute before:-left-[5px] before:-top-[5px] before:border-t-2 before:border-l-2 before:w-1/2 before:h-1/2 hover:before:h-[calc(100%+10px)] hover:before:w-[calc(100%+10px)] before:transition-all after:absolute after:-right-[5px] after:-bottom-[5px] after:border-b-2 after:border-r-2 after:w-1/2 after:h-1/2 hover:after:h-[calc(100%+10px)] hover:after:w-[calc(100%+10px)] after:transition-all">{props.label}</a>
+    return <a href={props.link} className="inline-block text-white hover:before:text-pink hover:after:text-pink before:ease-in-out after:ease-in-out py-3 px-5 text-2xl font-heading relative before:absolute before:-left-[5px] before:-top-[5px] before:border-t-4 before:border-l-4 before:w-1/2 before:h-1/2 hover:before:h-[calc(100%+10px)] hover:before:w-[calc(100%+10px)] before:transition-all after:absolute after:-right-[5px] after:-bottom-[5px] after:border-b-4 after:border-r-4 after:w-1/2 after:h-1/2 hover:after:h-[calc(100%+10px)] hover:after:w-[calc(100%+10px)] after:transition-all">{props.label}</a>
 }
 
 // Menu fly with us type button
