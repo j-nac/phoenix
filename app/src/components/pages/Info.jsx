@@ -10,6 +10,7 @@ const Info = () => {
   <p>https://svs.gsfc.nasa.gov/13537 NASA moon video</p>
   <p>https://images.nasa.gov/details/s84-36901 s84-36901~medium.jpg NASA diving training video</p>
   <p>https://images.nasa.gov/details/KSC-20200302-PH-KLS01_0011 KSC-20200302-PH-KLS01_0011~medium.jpg NASA safety training video</p>
+  <p>https://images.nasa.gov/details/jsc2022e045238 jsc2022e045238~medium.jpg NASA person in suit looking to the right</p>
   </>
   
 };

@@ -10,6 +10,9 @@ function BackgroundImageLabel(props) {
     } else if (props.position === "topLeft") {
         positioningClasses += " top-20 left-12";
     }
+    else if (props.position === "bottomRight") {
+        positioningClasses += " bottom-12 right-12";
+    }
 
     return (
     <>

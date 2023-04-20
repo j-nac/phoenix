@@ -16,18 +16,18 @@ function BackgroundImageDescription(props){
     )
 }
 function Quote(props){
-    return <p className="text-xl lg:text-3xl xl:text-5xl text-white mt-4 appear">"{props.text}"</p>
+    return <p className="text-xl lg:text-3xl xl:text-5xl text-white mt-4 appear font-paragraph">"{props.text}"</p>
 }
 
 function Author(props){
-    return <p className="text-md lg:text-xl xl:text-3xl text-pink mt-4 appear">- {props.text}</p>
+    return <p className="text-md lg:text-xl xl:text-3xl text-pink mt-4 appear font-paragraph">- {props.text}</p>
 }
 
 function Title(props){
-    return <p className="text-sm lg:text-base xl:text-xl text-purple ml-6 my-4 appear">{props.text}</p>
+    return <p className="text-sm lg:text-base xl:text-xl text-white ml-6 my-4 appear font-paragraph">{props.text}</p>
 }
 function QuoteHeader(props){
-    return <h1 className="text-white text-center text-3xl md:text-5xl pt-2 max-h-[10%] appear">{props.text}</h1>
+    return <h1 className="text-white text-center text-3xl md:text-9xl pt-2 max-h-[20%] appear font-heading">{props.text}</h1>
 }
 function Subphrase2(props){
     return <h2 className="text-base pt-5 px-3 text-white font-paragraph appear">{props.text}</h2>
