@@ -4,7 +4,7 @@ import logo from "../../images/logo-1.png"
 
 // Learn more type button
 function ButtonOutlined1(props) {
-    return <a href={props.link} className="inline-block p-3 text-white text-2xl font-heading relative before:bg-blue before:absolute before:w-full before:top-0 before:left-0 before:h-full hover:before:border-4 before:transition-all before:border-0 overflow-hidden before:border-pink">{props.label}</a>
+    return <a href={props.link} className="inline-block text-white hover:before:text-pink hover:after:text-pink before:ease-in-out after:ease-in-out p-2 text-2xl font-heading relative before:absolute before:-left-[5px] before:-top-[5px] before:border-t-2 before:border-l-2 before:w-1/2 before:h-1/2 hover:before:h-[calc(100%+10px)] hover:before:w-[calc(100%+10px)] before:transition-all after:absolute after:-right-[5px] after:-bottom-[5px] after:border-b-2 after:border-r-2 after:w-1/2 after:h-1/2 hover:after:h-[calc(100%+10px)] hover:after:w-[calc(100%+10px)] after:transition-all">{props.label}</a>
 }
 
 // Menu fly with us type button
