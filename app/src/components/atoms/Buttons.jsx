@@ -7,6 +7,10 @@ function ButtonOutlined1(props) {
     return <a href={props.link} className="inline-block text-white hover:before:text-pink hover:after:text-pink before:ease-in-out after:ease-in-out py-3 px-5 text-2xl font-heading relative before:absolute before:-left-[5px] before:-top-[5px] before:border-t-4 before:border-l-4 before:w-1/2 before:h-1/2 hover:before:h-[calc(100%+10px)] hover:before:w-[calc(100%+10px)] before:transition-all after:absolute after:-right-[5px] after:-bottom-[5px] after:border-b-4 after:border-r-4 after:w-1/2 after:h-1/2 hover:after:h-[calc(100%+10px)] hover:after:w-[calc(100%+10px)] after:transition-all hover:before:rounded-tl-lg hover:after:rounded-br-lg">{props.label}</a>
 }
 
+function LogoSelect(props) {
+    return <a href={props.link} className="text-2xl text-white font-paragraphing">{props.label}</a>
+}
+
 // Menu fly with us type button
 function ButtonOutlined2(props) {
     return (
@@ -21,7 +25,7 @@ function HamburgerIcon(props) {
 }
 
 function MenuSelectPage(props) {
-    return <a className='hover:before:[content:"➤"] hover:before:opacity-100 before:opacity-0 before:w-8 before:inline-block text-white before:transition-all before:relative before:right-10 hover:before:right-0 after:block after:h-1 after:w-3/4 after:bg-white hover:after:bg-pink transition-color text-3xl' href={props.link}>{props.label}</a>
+    return <a className='text-white before:z-[-1] before:absolute before:h-0 before:w-3/4 before:bottom-0 before:bg-pink hover:before:h-full before:transition-all after:z-[-1] py-2 after:block after:h-1 after:w-3/4 after:bg-white after:bottom-0 hover:after:bottom-full hover:after:translate-y-full after:transition-all after:absolute relative transition-color text-3xl' href={props.link}>{props.label}</a>
 }
 
 function HomeIcon(props) {
@@ -39,4 +43,5 @@ export {
     MenuSelectPage,
     HomeIcon,
     TopMenuSelect,
+    LogoSelect,
 }

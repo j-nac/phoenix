@@ -1,10 +1,10 @@
-import { HamburgerIcon, MenuSelectPage, TopMenuSelect } from "../atoms/Buttons"
+import { HamburgerIcon, MenuSelectPage, TopMenuSelect, LogoSelect } from "../atoms/Buttons"
 import $ from "jquery";
 
 function TopMenu(props) {
     return (
         <div className="sticky top-0 h-16 bg-black-glass z-50 items-end justify-around hidden md:flex pb-3 backdrop-blur-md">
-            <TopMenuSelect label="HOME" link="/" />
+            <LogoSelect label="LOGO HERE" link="/" />
             <TopMenuSelect label="SPACESHIPS" link="/ships" />
             <TopMenuSelect label="DESTINATIONS" link="/" />
             <TopMenuSelect label="TRAINING" link="/" />
