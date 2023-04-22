@@ -4,7 +4,6 @@ import rocket1 from "../../images/Optimized-spacex-uj3hvdfQujI-unsplash.jpg"
 import moon1 from "../../images/Optimized-nicolas-thomas-wKlqqfNTLsI-unsplash.jpg"
 import people1 from "../../images/Optimized-christina-wocintechchat-com-faEfWCdOKIg-unsplash.jpg"
 import training1 from "../../images/s84-36901~medium.jpg"
-import safety1 from "../../images/KSC-20200302-PH-KLS01_0011~medium.jpg"
 import safety2 from "../../images/jsc2022e045238~medium.jpg"
 import { VideoSlide, BackgroundImageSlide, QuoteSlide  } from "../organisms/Slides";
 import { TopMenu, HamburgerMenu } from "../organisms/NavElements";

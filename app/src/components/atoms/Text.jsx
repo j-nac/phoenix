@@ -1,36 +1,41 @@
+import { useOnScreen } from "../Hooks/Text.jsx";
+
 function Header1(props) {
-    return <h1 className='text-white text-9xl font-heading appear'>{props.text}</h1>
+    const reference = useOnScreen();
+    return <h1 className='text-white text-9xl font-heading overflow-hidden' ref={reference}><span className="top-32 opacity-25 relative transition-all duration-500">{props.text}</span></h1>
 }
 
 function Tagline1(props) {
-    return <h2 className='text-white text-5xl font-heading appear'>{props.text}</h2>
+    const reference = useOnScreen();
+    return <h2 className='text-white text-5xl font-heading overflow-hidden' ref={reference}><span className="top-32 opacity-25 relative transition-all duration-500">{props.text}</span></h2>
 }
 
 function Subphrase1(props) {
-    return <h3 className='text-white text-3xl font-paragraph appear'>{props.text}</h3>
+    const reference = useOnScreen();
+    return <h3 className='text-white text-3xl font-paragraph overflow-hidden' ref={reference}><span className="top-32 opacity-25 relative transition-all duration-500">{props.text}</span></h3>
 }
 
 function BackgroundImageDescription(props){
     return (
-        <p className="absolute top-1/2 -translate-y-1/2 right-12 text-white text-2xl max-w-[24rem] ml-12 appear">{props.description}</p>
+        <p className="absolute top-1/2 -translate-y-1/2 right-12 text-white text-2xl max-w-[24rem] ml-12">{props.description}</p>
     )
 }
 function Quote(props){
-    return <p className="text-xl lg:text-3xl xl:text-5xl text-white mt-4 appear font-paragraph">"{props.text}"</p>
+    return <p className="text-xl lg:text-3xl xl:text-5xl text-white mt-4 font-paragraph">"{props.text}"</p>
 }
 
 function Author(props){
-    return <p className="text-md lg:text-xl xl:text-3xl text-pink mt-4 appear font-paragraph">- {props.text}</p>
+    return <p className="text-md lg:text-xl xl:text-3xl text-pink mt-4 font-paragraph">- {props.text}</p>
 }
 
 function Title(props){
-    return <p className="text-sm lg:text-base xl:text-xl text-white ml-6 my-4 appear font-paragraph">{props.text}</p>
+    return <p className="text-sm lg:text-base xl:text-xl text-white ml-6 my-4 font-paragraph">{props.text}</p>
 }
 function QuoteHeader(props){
-    return <h1 className="text-white text-center text-3xl md:text-9xl pt-2 mt-12 max-h-[20%] appear font-heading">{props.text}</h1>
+    return <h1 className="text-white text-center text-3xl md:text-9xl pt-2 mt-12 max-h-[20%] font-heading">{props.text}</h1>
 }
 function Subphrase2(props){
-    return <h2 className="text-base pt-5 px-3 text-white font-paragraph appear">{props.text}</h2>
+    return <h2 className="text-base pt-5 px-3 text-white font-paragraph">{props.text}</h2>
 }
 function Header2(props){
     return <h1 className="text-6xl px-3 text-white font-heading appear">{props.text}</h1>
