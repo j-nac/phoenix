@@ -1,6 +1,6 @@
-import { BackgroundImageLabel, QuoteArea, SlideParagraph, DescContainer } from "../molecules/TextArea";
+import { BackgroundImageLabel, QuoteArea, SlideParagraph, DescContainer, LeftImageText } from "../molecules/TextArea";
 import { QuoteImage, VideoBackGround } from "../molecules/ImageArea";
-import { QuoteHeader, Header2, Subphrase2, Header3, Subphrase3 } from "../atoms/Text"
+import { QuoteHeader, Header2, Subphrase2, Header3, Subphrase3} from "../atoms/Text"
 
 function BackgroundImageSlide(props) {
     return (
@@ -21,8 +21,12 @@ function QuoteSlide(props) {
     );
 };
 function VideoSlide(props){
+    let classes = "h-screen w-screen min-w-slide min-h-slide relative overflow-hidden"
+    if(props.fit === "menu"){
+        classes += " md:h-screen-menu md:min-h-slide-menu"
+    }
     return (
-        <div className="h-screen w-screen min-w-slide min-h-slide relative overflow-hidden">
+        <div className={classes}>
             <VideoBackGround file={props.file} altimg={props.altimg} />
             <BackgroundImageLabel main={props.main} tagline={props.tagline} sub={props.sub} label={props.label} link={props.link} position={props.position} description={props.description} />
         </div>
@@ -46,6 +50,16 @@ function ImageDescribedSlide(props){
         </div>
     )
 }
+function LeftImageTextSlide(props){
+    return(
+        <div className="w-screen min-w-slide relative bg-black px-[15%] py-5">
+            <hr className="text-white"/>
+            <Subphrase2 text = {props.subphrase} />
+            <Header2 text = {props.header} />
+            <LeftImageText src={props.src} desc={props.desc}/>
+        </div>
+    )
+}
 
 export {
     BackgroundImageSlide,
@@ -53,4 +67,5 @@ export {
     VideoSlide,
     TextSlide,
     ImageDescribedSlide,
+    LeftImageTextSlide,
 };

@@ -63,9 +63,19 @@ function DescContainer(props){
     )
 }
 
+function LeftImageText(props){
+    return(
+        <div className="flex justify-between py-6">
+            <ParagraphImage src={props.src} />
+            <Paragraph text={props.desc} />
+        </div>
+    )
+}
+
 export {
     BackgroundImageLabel,
     QuoteArea,
     SlideParagraph,
     DescContainer,
+    LeftImageText,
 };

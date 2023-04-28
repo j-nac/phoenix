@@ -23,6 +23,11 @@ module.exports = {
       },
       minHeight: {
         'slide': '600px',
+        'slide-menu': 'calc(600px - 60px)',
+      },
+      height: {
+        'screen-menu': 'calc(100vh - 60px)',
+        'menu': '60px',
       },
     },
   },

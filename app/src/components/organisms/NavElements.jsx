@@ -3,7 +3,7 @@ import $ from "jquery";
 
 function TopMenu(props) {
     return (
-        <div className="sticky top-0 h-16 bg-black-glass z-50 items-end justify-around hidden md:flex pb-3 backdrop-blur-md">
+        <div className="sticky top-0 h-menu bg-black-glass z-50 items-end justify-around hidden md:flex pb-3 backdrop-blur-md">
             <LogoSelect label="LOGO HERE" link="/" />
             <TopMenuSelect label="SPACESHIPS" link="/ships" />
             <TopMenuSelect label="DESTINATIONS" link="/" />

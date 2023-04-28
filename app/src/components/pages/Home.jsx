@@ -12,7 +12,7 @@ const Home = () => {
     return (
     <>
         <HamburgerMenu homeLink={"#root"} goLabel="FLY WITH US" />
-        <VideoSlide file="https://svs.gsfc.nasa.gov/vis/a010000/a013500/a013537/13537_Apollo13ViewsMoon4K_HDversion.webm" altimg={peanuts} main="ASTRAL" tagline="TOUCH THE STARS" position="bottomLeft"/>
+        <VideoSlide file="https://svs.gsfc.nasa.gov/vis/a010000/a013500/a013537/13537_Apollo13ViewsMoon4K_HDversion.webm" altimg={peanuts} main="ASTRAL" tagline="TOUCH THE STARS" position="bottomLeft" fit="menu"/>
         <TopMenu homeLink={"#root"} goLabel="FLY WITH US" />
         <BackgroundImageSlide main="SPACESHIPS" sub="Ride in Comfort" label="LEARN MORE" link="/ships" background={`linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${rocket1}`} position="bottomLeft" />
         <BackgroundImageSlide main="DESTINATIONS" label="LEARN MORE" link="/destinations" background={`url(${moon1}`} position="topLeft" description="See the moon closer than ever before with our first-class lunar experience"/>

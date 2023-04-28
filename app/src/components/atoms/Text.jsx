@@ -60,6 +60,13 @@ function Subphrase3(props){
     return <h2 className="text-lg pt-5 px-3 text-white font-paragraph text-right appear">{props.text}</h2>
 }
 
+function Header4(props){
+    return <h1 className="inline-block text-5xl font-heading pr-3 text-white">{props.text}</h1>
+}
+function Subphrase4(props){
+    return <p className="inline-block text-2xl font-heading px-4 text-white">{props.text}</p>
+}
+
 export {
     Header1,
     Tagline1,
@@ -75,4 +82,6 @@ export {
     Header3,
     ImageText,
     Subphrase3,
+    Header4,
+    Subphrase4,
 };
