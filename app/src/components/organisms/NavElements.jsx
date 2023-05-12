@@ -40,9 +40,33 @@ function HamburgerMenu(props){
     </>
     )
 }
+function Footer(){
+    return (
+    <div className="w-full bg-black p-8">
+        <div className="flex justify-between">
+            <div className="hidden sm:flex grow-0 align-center">
+                <div className="w-32 h-32 bg-white">LOGO</div>
+            </div>
+            <div className="bg-pink grow sm:ml-8 p-6">
+                <div className="flex flex-wrap mx-auto w-64 max-w-full justify-around">
+                    <div className="w-8 h-8 bg-white"></div>
+                    <div className="w-8 h-8 bg-white"></div>
+                    <div className="w-8 h-8 bg-white"></div>
+                    <div className="w-8 h-8 bg-white"></div>
+                    <div className="w-8 h-8 bg-white"></div>
+                </div>
+            </div>
+        </div>
+        <div className="flex-wrap flex text-white justify-between">
+            <p>Home Other Other Other</p><p>Copyright 2043 ASTRAL Technologies</p>
+        </div>
+    </div>
+    )
+}
 
 
 export {
     TopMenu,
     HamburgerMenu,
+    Footer,
 }

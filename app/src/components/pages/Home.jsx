@@ -6,7 +6,7 @@ import people1 from "../../images/Optimized-christina-wocintechchat-com-faEfWCdO
 import training1 from "../../images/s84-36901~medium.jpg"
 import safety2 from "../../images/jsc2022e045238~medium.jpg"
 import { VideoSlide, BackgroundImageSlide, QuoteSlide  } from "../organisms/Slides";
-import { TopMenu, HamburgerMenu } from "../organisms/NavElements";
+import { TopMenu, HamburgerMenu, Footer } from "../organisms/NavElements";
 
 const Home = () => {
     return (
@@ -20,6 +20,7 @@ const Home = () => {
         <BackgroundImageSlide main="TRAINING" label="LEARN MORE" link="/training" background={`linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${training1}`} position="topLeft" description="Common diving training in our world class facility in Telluride, CO" />
         <BackgroundImageSlide main="SAFETY" sub="Setting the Standard" label="LEARN MORE" link="/safety" background={`url(${safety2}`} position="bottomRight" />
         <BackgroundImageSlide main="ABOUT US" sub="You Are Our Mission" label="LEARN MORE" link="/about" background={`linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${people1}`} position="bottomLeft" />
+        <Footer />
     </>
     );
 };
