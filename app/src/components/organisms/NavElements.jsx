@@ -42,23 +42,28 @@ function HamburgerMenu(props){
 }
 function Footer(){
     return (
-    <div className="w-full bg-black p-8">
-        <div className="flex justify-between">
-            <div className="hidden sm:flex grow-0 align-center">
-                <div className="w-32 h-32 bg-white">LOGO</div>
+    <div className="w-full min-w-slide bg-black p-8">
+        <div className="flex justify-between py-4 md:px-16 px-6">
+            <div className="hidden sm:flex grow-0 items-center">
+                <div className="w-64 h-64 bg-white">LOGO</div>
             </div>
-            <div className="bg-pink grow sm:ml-8 p-6">
-                <div className="flex flex-wrap mx-auto w-64 max-w-full justify-around">
-                    <div className="w-8 h-8 bg-white"></div>
-                    <div className="w-8 h-8 bg-white"></div>
-                    <div className="w-8 h-8 bg-white"></div>
-                    <div className="w-8 h-8 bg-white"></div>
-                    <div className="w-8 h-8 bg-white"></div>
+            <div className="grow sm:ml-8 p-4 flex flex-col items-center justify-around">
+                <div className="flex flex-wrap w-64 max-w-full justify-around mb-6">
+                    <div className="w-12 h-12 bg-white"></div>
+                    <div className="w-12 h-12 bg-white"></div>
+                    <div className="w-12 h-12 bg-white"></div>
+                </div>
+                <div className="flex justify-center flex-wrap w-full md:w-3/4">
+                    <p className="p-2 text-3xl text-white">Home</p>
+                    <p className="p-2 text-3xl text-white">Home</p>
+                    <p className="p-2 text-3xl text-white">Home</p>
+                    <p className="p-2 text-3xl text-white">Home</p>
+                    <p className="p-2 text-3xl text-white">Home</p>
                 </div>
             </div>
         </div>
         <div className="flex-wrap flex text-white justify-between">
-            <p>Home Other Other Other</p><p>Copyright 2043 ASTRAL Technologies</p>
+            <div className="p-1 block">Home Other Other Other</div><div className="p-1 block">Copyright 2043 ASTRAL Technologies</div>
         </div>
     </div>
     )
