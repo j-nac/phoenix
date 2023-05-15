@@ -6,9 +6,9 @@ function TopMenu(props) {
         <div className="sticky top-0 h-menu bg-black-glass z-50 items-end justify-around hidden md:flex pb-3 backdrop-blur-md">
             <LogoSelect label="LOGO HERE" link="/" />
             <TopMenuSelect label="SPACESHIPS" link="/ships" />
-            <TopMenuSelect label="DESTINATIONS" link="/" />
-            <TopMenuSelect label="TRAINING" link="/" />
-            <TopMenuSelect label="ABOUT" link="/" />
+            <TopMenuSelect label="DESTINATIONS" link="/destinations" />
+            <TopMenuSelect label="TRAINING" link="/training" />
+            <TopMenuSelect label="ABOUT" link="/about" />
             <TopMenuSelect label="FLY WITH US" link="/" />
         </div>
     )
@@ -54,11 +54,11 @@ function Footer(){
                     <div className="w-12 h-12 bg-white"></div>
                 </div>
                 <div className="flex justify-center flex-wrap w-full md:w-3/4">
-                    <p className="p-2 text-3xl text-white">Home</p>
-                    <p className="p-2 text-3xl text-white">Home</p>
-                    <p className="p-2 text-3xl text-white">Home</p>
-                    <p className="p-2 text-3xl text-white">Home</p>
-                    <p className="p-2 text-3xl text-white">Home</p>
+                    <a href="/" className="p-2 text-3xl text-white">HOME</a>
+                    <a href="/ships" className="p-2 text-3xl text-white">SPACESHIPS</a>
+                    <a href="/destinations" className="p-2 text-3xl text-white">DESTINATIONS</a>
+                    <a href="/training" className="p-2 text-3xl text-white">TRAINING</a>
+                    <a href="/about" className="p-2 text-3xl text-white">ABOUT</a>
                 </div>
             </div>
         </div>
