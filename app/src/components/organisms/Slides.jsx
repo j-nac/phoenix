@@ -61,6 +61,8 @@ function LeftImageTextSlide(props){
     )
 }
 
+
+
 export {
     BackgroundImageSlide,
     QuoteSlide,

@@ -9,7 +9,7 @@ function TopMenu(props) {
             <TopMenuSelect label="DESTINATIONS" link="/destinations" />
             <TopMenuSelect label="TRAINING" link="/training" />
             <TopMenuSelect label="ABOUT" link="/about" />
-            <TopMenuSelect label="FLY WITH US" link="/" />
+            <TopMenuSelect label="FLY WITH US" link="/booking" />
         </div>
     )
 }
