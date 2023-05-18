@@ -42,8 +42,12 @@ function Header2(props){
 }
 function Paragraph(props){
     let text = [];
-    props.text.forEach(e=>{text.push(e); text.push(<><br /><br /></>)})
-    return <p className="font-paragraph text-sm md:text-base text-white px-3 min-h-48 after:clear-both after:block appear">{text}</p>
+    props.text.forEach((e,i)=>{
+        let classes = "font-paragraph text-sm md:text-base text-white px-3 appear inline"
+        if(i < props.text.length){classes += " mb-12"}
+        text.push(<p className={classes} key={i}>{e}</p>); 
+    })
+    return <div className="min-h-48 after:clear-both after:block flex flex-col">{text}</div>
 }
 
 function Header3(props){
