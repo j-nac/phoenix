@@ -53,8 +53,7 @@ function ImageDescribedSlide(props){
 function LeftImageTextSlide(props){
     return(
         <div className="w-screen min-w-slide relative bg-black px-[15%] py-5">
-            <hr className="text-white"/>
-            <Subphrase2 text = {props.subphrase} />
+            <Subphrase2 text={props.subphrase} />
             <Header2 text = {props.header} />
             <LeftImageText src={props.src} desc={props.desc}/>
         </div>

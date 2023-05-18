@@ -48,7 +48,6 @@ function SlideParagraph(props){
                 <Paragraph text = {props.text} />
                 <ParagraphImage src={props.src} />
             </div>
-            <hr className="text-white"/>
         </>
     )
 }
