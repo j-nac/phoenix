@@ -77,6 +77,7 @@ function DestinationCard(props) {
             <DestinationImage src={props.src} />
             <DestinationPrice price={props.price} />
             <DestinationDescription desc={props.desc} />
+            <button onClick={()=>props.forward(1,props.destId)} className="bg-white">CLICK ME PLEASE</button>
         </div>
     )
 }
