@@ -31,6 +31,10 @@ function SocialLogo(props){
     )
 }
 
+function DestinationImage(props) {
+    return <img className="h-64 w-64" src={props.src} alt="blah" />
+}
+
 export {
     QuoteImg,
     BackgroundVideo,
@@ -39,4 +43,5 @@ export {
     DescribedImage,
     FooterLogo,
     SocialLogo,
+    DestinationImage,
 }

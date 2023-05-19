@@ -45,7 +45,7 @@ function HamburgerMenu(props){
     </>
     )
 }
-function Footer(){
+function Footer(props){
     return (
     <div className="w-full min-w-slide bg-off-black p-8">
         <div className="flex justify-between py-4 md:px-16 px-6">

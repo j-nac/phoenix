@@ -43,7 +43,7 @@ function Header2(props){
 function Paragraph(props){
     let text = [];
     props.text.forEach((e,i)=>{
-        let classes = "font-paragraph text-sm md:text-base text-white px-3 appear inline"
+        let classes = "font-paragraph text-sm md:text-xl text-white px-3 appear inline"
         if(i < props.text.length){classes += " mb-12"}
         text.push(<p className={classes} key={i}>{e}</p>); 
     })
@@ -74,6 +74,26 @@ function Subphrase4(props){
 function Copyright(props){
     return <p className="p-1 block text-sm text-gray grow-0">Copyright 2043 ASTRAL Technologies</p>
 }
+function DestinationPrice(props) {
+    return <h2 className="text-2xl text-white">Price waaa {props.price}</h2>
+}
+
+function DestinationDescription(props) {
+    return <p className="text-lg text-white">{props.desc}</p>
+}
+
+function FormInput(props) {
+    return (
+        <div className="block">
+            <label className="block text-white">{props.label}</label>
+            <input type={props.type} />
+        </div>
+    )
+}
+
+function FormSection(props) {
+    return <h2 className="text-2xl text-white">{props.title}</h2>
+}
 
 export {
     Header1,
@@ -93,4 +113,8 @@ export {
     Header4,
     Subphrase4,
     Copyright,
+    DestinationPrice,
+    DestinationDescription,
+    FormInput,
+    FormSection,
 };
