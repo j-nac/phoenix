@@ -43,7 +43,7 @@ function Header2(props){
 function Paragraph(props){
     let text = [];
     props.text.forEach((e,i)=>{
-        let classes = "font-paragraph text-sm md:text-base text-white px-3 appear inline"
+        let classes = "font-paragraph text-sm md:text-xl text-white px-3 appear inline"
         if(i < props.text.length){classes += " mb-12"}
         text.push(<p className={classes} key={i}>{e}</p>); 
     })
