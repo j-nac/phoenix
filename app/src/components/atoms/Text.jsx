@@ -71,6 +71,9 @@ function Subphrase4(props){
     return <p className="inline-block text-2xl font-heading px-4 text-white">{props.text}</p>
 }
 
+function Copyright(props){
+    return <p className="p-1 block text-sm text-gray grow-0">Copyright 2043 ASTRAL Technologies</p>
+}
 function DestinationPrice(props) {
     return <h2 className="text-2xl text-white">Price waaa {props.price}</h2>
 }
@@ -109,6 +112,7 @@ export {
     Subphrase3,
     Header4,
     Subphrase4,
+    Copyright,
     DestinationPrice,
     DestinationDescription,
     FormInput,

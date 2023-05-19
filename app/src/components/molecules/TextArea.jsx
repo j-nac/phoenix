@@ -1,5 +1,5 @@
 import { Header1, Tagline1, Subphrase1, BackgroundImageDescription, Quote, Author, Title, DestinationPrice, DestinationDescription, FormInput, FormSection} from "../atoms/Text";
-import { ButtonOutlined1 } from "../atoms/Buttons";
+import { ButtonOutlined1, MetaLink } from "../atoms/Buttons";
 import { Paragraph, ImageText } from "../atoms/Text"
 import { ParagraphImage, DescribedImage, DestinationImage } from "../atoms/Images"
 
@@ -70,6 +70,15 @@ function LeftImageText(props){
         </div>
     )
 }
+function MetaLinks(props){
+    return (
+        <div className="flex justify-between mr-12 grow-1">
+            <MetaLink text="TSA LINKS" link="/tsa" />
+            <MetaLink text="TERMS OF SERVICE" link="/tsa" />
+            <MetaLink text="COPYRIGHT" link="/tsa" />
+        </div>
+    )
+}
 
 function DestinationCard(props) {
     return (
@@ -116,6 +125,7 @@ export {
     SlideParagraph,
     DescContainer,
     LeftImageText,
+    MetaLinks,
     DestinationCard,
     BookingForm,
 };

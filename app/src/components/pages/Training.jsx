@@ -1,5 +1,5 @@
 import { VideoSlide, TextSlide, LeftImageTextSlide, BackgroundImageSlide } from "../organisms/Slides";
-import { TopMenu, HamburgerMenu } from "../organisms/NavElements";
+import { TopMenu, HamburgerMenu, Footer } from "../organisms/NavElements";
 import peanuts from "../../images/roasted-peanuts-jpg-1656535069.jpg";
 import training1 from "../../images/Edited-KSC-20200924-PH-SPX01_0008~medium.jpg";
 
@@ -14,6 +14,7 @@ const Training = () => {
         <LeftImageTextSlide header="TRAINING ENSURES SAFETY"src={peanuts} desc={["The training program for our clients is comprehensive and informative, ensuring that clients have the knowledge and skills necessary to have a safe and enjoyable experience in space.", "At Astral, we go above industry standards, pairing careful vetting and training to ensure absolute security."]} />
         <BackgroundImageSlide main="OUR COACHES" background={`url(${training1}`} position="bottomRight" description="Our coaches have a required 800 hours space plus months in training and multiple required certifications ensuring only the best lead the way."/>
         <LeftImageTextSlide header="THE RECORD SPEAKS FOR ITSELF"src={peanuts} desc={["Our program's perfect track record reflects this. We put in the effort and attention to detail to ensure every passenger can respond to emergencies if needed. Have the confidence to go out into space and know what's ahead."]} />
+        <Footer />
       </>
     )
 };
