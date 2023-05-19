@@ -23,8 +23,9 @@ function DescribedImage(props){
 
 function CardImage(props)
 {
-    return <img className="rounded-full float-center mx-auto my-10 px-10 w-[75%] object-center md:block hidden" src={props.src} alt=""/>
+    return <img className="mx-auto my-10 px-10 w-[75%] object-center md:block hidden" src={props.src} alt=""/>
 }
+
 
 export {
     QuoteImg,
@@ -32,5 +33,5 @@ export {
     BackgroundImage,
     ParagraphImage,
     DescribedImage,
-    CardImage
+    CardImage,
 }

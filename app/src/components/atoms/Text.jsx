@@ -68,7 +68,7 @@ function Subphrase4(props){
 }
 
 function CardText(props){
-    return <p className="font-paragraph text-xl text-white px-3 min-h-48 after:clear-both after:block appear">{props.text}</p>
+    return <p className="font-paragraph text-3xl text-white px-3 min-h-48 after:clear-both after:block appear">{props.text}</p>
 }
 
 export {

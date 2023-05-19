@@ -73,9 +73,10 @@ function LeftImageText(props){
 
 function ImageCard(props){
     return(
-        <div className="bg-purple flex flex-col text-center py-6 w-1/4 mx-10 my-10 inline">
+        <div className="bg-purple text-center py-6 w-1/4 mx-10 my-10 inline">
             <CardImage src={props.src} />
-            <CardText text={props.desc} />
+            <CardText text={props.name} />
+            <Paragraph text={props.desc} />
         </div>
     )
 }
