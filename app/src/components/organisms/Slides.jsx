@@ -64,9 +64,9 @@ function DestinationSelect(props) {
     return (
         <div className="w-screen min-w-slide relative bg-black px-[15%] py-5">
             <div className="flex justify-center">
-                <DestinationCard src={props.src[0]} price={props.price[0]} desc={props.desc[0]} />
-                <DestinationCard src={props.src[1]} price={props.price[1]} desc={props.desc[1]} />
-                <DestinationCard src={props.src[2]} price={props.price[2]} desc={props.desc[2]} />
+                <DestinationCard src={props.src[0]} price={props.price[0]} desc={props.desc[0]} forward={props.forward} destId={0} />
+                <DestinationCard src={props.src[1]} price={props.price[1]} desc={props.desc[1]} forward={props.forward} destId={1} />
+                <DestinationCard src={props.src[2]} price={props.price[2]} desc={props.desc[2]} forward={props.forward} destId={2} />
             </div>
         </div>
     )
