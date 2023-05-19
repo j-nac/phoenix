@@ -21,10 +21,15 @@ function DescribedImage(props){
     return <img src = {props.src} alt="" className="object-contain md:w-1/2" />
 }
 
+function DestinationImage(props) {
+    return <img className="h-64 w-64" src={props.src} alt="blah" />
+}
+
 export {
     QuoteImg,
     BackgroundVideo,
     BackgroundImage,
     ParagraphImage,
     DescribedImage,
+    DestinationImage,
 }
