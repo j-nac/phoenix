@@ -1,7 +1,7 @@
-import {Header1, Tagline1, Subphrase1, BackgroundImageDescription, Quote, Author, Title} from "../atoms/Text";
+import {Header1, Tagline1, Subphrase1, BackgroundImageDescription, Quote, Author, Title, CardText} from "../atoms/Text";
 import { ButtonOutlined1 } from "../atoms/Buttons";
 import { Paragraph, ImageText } from "../atoms/Text"
-import { ParagraphImage, DescribedImage } from "../atoms/Images"
+import { ParagraphImage, DescribedImage, CardImage } from "../atoms/Images"
 
 function BackgroundImageLabel(props) {
     let positioningClasses = "absolute";
@@ -71,10 +71,20 @@ function LeftImageText(props){
     )
 }
 
+function ImageCard(props){
+    return(
+        <div className="bg-purple flex flex-col text-center py-6 w-1/4 mx-10 my-10 inline">
+            <CardImage src={props.src} />
+            <CardText text={props.desc} />
+        </div>
+    )
+}
+
 export {
     BackgroundImageLabel,
     QuoteArea,
     SlideParagraph,
     DescContainer,
     LeftImageText,
+    ImageCard,
 };

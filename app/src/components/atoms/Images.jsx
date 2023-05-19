@@ -21,10 +21,16 @@ function DescribedImage(props){
     return <img src = {props.src} alt="" className="object-contain md:w-1/2" />
 }
 
+function CardImage(props)
+{
+    return <img className="rounded-full float-center mx-auto my-10 px-10 w-[75%] object-center md:block hidden" src={props.src} alt=""/>
+}
+
 export {
     QuoteImg,
     BackgroundVideo,
     BackgroundImage,
     ParagraphImage,
     DescribedImage,
+    CardImage
 }

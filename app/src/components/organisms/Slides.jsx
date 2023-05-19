@@ -1,4 +1,4 @@
-import { BackgroundImageLabel, QuoteArea, SlideParagraph, DescContainer, LeftImageText } from "../molecules/TextArea";
+import { BackgroundImageLabel, QuoteArea, SlideParagraph, DescContainer, LeftImageText, ImageCard } from "../molecules/TextArea";
 import { QuoteImage, VideoBackGround } from "../molecules/ImageArea";
 import { QuoteHeader, Header2, Subphrase2, Header3, Subphrase3} from "../atoms/Text"
 
@@ -59,6 +59,21 @@ function LeftImageTextSlide(props){
         </div>
     )
 }
+function CardsSlide(props){
+    return(
+        <div className="text-center w-screen min-w-slide">
+            <Header2 text = {props.header}/>
+            <div className="w-screen min-w-slide relative bg-black px-[15%] py-5 flex flex-wrap justify-center">
+                <ImageCard src={props.src1} desc={props.desc1}/>
+                <ImageCard src={props.src2} desc={props.desc2}/>
+                <ImageCard src={props.src3} desc={props.desc3}/>
+                <ImageCard src={props.src4} desc={props.desc4}/>
+                <ImageCard src={props.src5} desc={props.desc5}/>
+                <ImageCard src={props.src6} desc={props.desc6}/>
+            </div>
+        </div>
+    )
+}
 
 
 
@@ -69,4 +84,5 @@ export {
     TextSlide,
     ImageDescribedSlide,
     LeftImageTextSlide,
+    CardsSlide
 };

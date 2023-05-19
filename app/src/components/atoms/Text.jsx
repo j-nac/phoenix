@@ -67,6 +67,10 @@ function Subphrase4(props){
     return <p className="inline-block text-2xl font-heading px-4 text-white">{props.text}</p>
 }
 
+function CardText(props){
+    return <p className="font-paragraph text-xl text-white px-3 min-h-48 after:clear-both after:block appear">{props.text}</p>
+}
+
 export {
     Header1,
     Tagline1,
@@ -84,4 +88,5 @@ export {
     Subphrase3,
     Header4,
     Subphrase4,
+    CardText
 };
