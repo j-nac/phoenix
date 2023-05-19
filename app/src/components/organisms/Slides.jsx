@@ -1,4 +1,4 @@
-import { BackgroundImageLabel, QuoteArea, SlideParagraph, DescContainer, LeftImageText, DestinationCard } from "../molecules/TextArea";
+import { BackgroundImageLabel, QuoteArea, SlideParagraph, DescContainer, LeftImageText, DestinationCard, BookingForm } from "../molecules/TextArea";
 import { QuoteImage, VideoBackGround } from "../molecules/ImageArea";
 import { QuoteHeader, Header2, Subphrase2, Header3, Subphrase3} from "../atoms/Text"
 
@@ -72,6 +72,14 @@ function DestinationSelect(props) {
     )
 }
 
+function BookingInfoSlide(props) {
+    return (
+        <div className="w-screen min-w-slide relative bg-black px-[15%] py-5">
+            <BookingForm />
+        </div> 
+    )
+}
+
 export {
     BackgroundImageSlide,
     QuoteSlide,
@@ -80,4 +88,5 @@ export {
     ImageDescribedSlide,
     LeftImageTextSlide,
     DestinationSelect,
+    BookingInfoSlide
 };

@@ -1,4 +1,4 @@
-import {Header1, Tagline1, Subphrase1, BackgroundImageDescription, Quote, Author, Title, DestinationPrice, DestinationDescription} from "../atoms/Text";
+import { Header1, Tagline1, Subphrase1, BackgroundImageDescription, Quote, Author, Title, DestinationPrice, DestinationDescription, FormInput, FormSection} from "../atoms/Text";
 import { ButtonOutlined1 } from "../atoms/Buttons";
 import { Paragraph, ImageText } from "../atoms/Text"
 import { ParagraphImage, DescribedImage, DestinationImage } from "../atoms/Images"
@@ -81,6 +81,34 @@ function DestinationCard(props) {
     )
 }
 
+function BookingForm(props) {
+    return (
+        <form>
+            <FormSection title="Contact" />
+            <FormInput label="First name" type="text" />
+            <FormInput label="Last name" type="text" />
+            <FormInput label="Email" type="text" />
+            <FormInput label="Phone number" type="text" />
+            <FormInput label="Country" type="text" />
+            <FormInput label="State/province" type="text" />
+            <FormInput label="Street address" type="text" />
+            <FormInput label="City" type="text" />
+            <FormInput label="Zip code" type="text" />
+
+            <FormSection title="Billing" />
+            <FormInput label="Payment method" type="text" />
+            <FormInput label="Credit card number" type="text" />
+            <FormInput label="Security code" type="text" />
+            <FormInput label="Expiration" type="text" />
+
+            <FormSection title="Health and Safety" />
+            <p className="text-white">You will be contacted within five business days with further information through email regarding health information and safety. Further information on requirements to fly found here.</p>
+            <FormInput label="I understand" type="checkbox" />
+            <FormInput label="Submit" type="submit" />
+        </form>
+    )
+}
+
 export {
     BackgroundImageLabel,
     QuoteArea,
@@ -88,4 +116,5 @@ export {
     DescContainer,
     LeftImageText,
     DestinationCard,
+    BookingForm,
 };

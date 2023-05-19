@@ -75,6 +75,19 @@ function DestinationDescription(props) {
     return <p className="text-lg text-white">{props.desc}</p>
 }
 
+function FormInput(props) {
+    return (
+        <div className="block">
+            <label className="block text-white">{props.label}</label>
+            <input type={props.type} />
+        </div>
+    )
+}
+
+function FormSection(props) {
+    return <h2 className="text-2xl text-white">{props.title}</h2>
+}
+
 export {
     Header1,
     Tagline1,
@@ -94,4 +107,6 @@ export {
     Subphrase4,
     DestinationPrice,
     DestinationDescription,
+    FormInput,
+    FormSection,
 };
