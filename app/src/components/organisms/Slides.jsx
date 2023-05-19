@@ -79,9 +79,9 @@ function MapSlide(props){
     return (
         <div className="w-screen min-w-slide relative bg-black px-[15%] py-5">
             <Header2 text = {props.header} />
-            <div className="flex justify-between">
-                <Paragraph className="max-w-screen-sm" text={props.paragraph} />
-                <iframe className="w-48 border-0 float-right align-right mx-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d68045.55238447482!2d-106.48733484641473!3d39.121613383735244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876a9eed65169f67%3A0x5f551784f65ce6d3!2sMt%20Massive!5e0!3m2!1sen!2sus!4v1684538335705!5m2!1sen!2sus" />
+            <div className="flex flex-grow justify-between">
+                <Paragraph text={props.paragraph} />
+                <iframe className="w-96 h-96 border-0 float-right mx-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d68045.55238447482!2d-106.48733484641473!3d39.121613383735244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876a9eed65169f67%3A0x5f551784f65ce6d3!2sMt%20Massive!5e0!3m2!1sen!2sus!4v1684538335705!5m2!1sen!2sus" />
             </div>
         </div>
     )
