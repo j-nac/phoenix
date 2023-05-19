@@ -1,7 +1,7 @@
-import {Header1, Tagline1, Subphrase1, BackgroundImageDescription, Quote, Author, Title} from "../atoms/Text";
+import {Header1, Tagline1, Subphrase1, BackgroundImageDescription, Quote, Author, Title, DestinationPrice, DestinationDescription} from "../atoms/Text";
 import { ButtonOutlined1 } from "../atoms/Buttons";
 import { Paragraph, ImageText } from "../atoms/Text"
-import { ParagraphImage, DescribedImage } from "../atoms/Images"
+import { ParagraphImage, DescribedImage, DestinationImage } from "../atoms/Images"
 
 function BackgroundImageLabel(props) {
     let positioningClasses = "absolute";
@@ -71,10 +71,21 @@ function LeftImageText(props){
     )
 }
 
+function DestinationCard(props) {
+    return (
+        <div className="m-5 px-3">
+            <DestinationImage src={props.src} />
+            <DestinationPrice price={props.price} />
+            <DestinationDescription desc={props.desc} />
+        </div>
+    )
+}
+
 export {
     BackgroundImageLabel,
     QuoteArea,
     SlideParagraph,
     DescContainer,
     LeftImageText,
+    DestinationCard,
 };

@@ -67,6 +67,14 @@ function Subphrase4(props){
     return <p className="inline-block text-2xl font-heading px-4 text-white">{props.text}</p>
 }
 
+function DestinationPrice(props) {
+    return <h2 className="text-2xl text-white">Price waaa {props.price}</h2>
+}
+
+function DestinationDescription(props) {
+    return <p className="text-lg text-white">{props.desc}</p>
+}
+
 export {
     Header1,
     Tagline1,
@@ -84,4 +92,6 @@ export {
     Subphrase3,
     Header4,
     Subphrase4,
+    DestinationPrice,
+    DestinationDescription,
 };
