@@ -20,6 +20,16 @@ function ParagraphImage(props){
 function DescribedImage(props){
     return <img src = {props.src} alt="" className="object-contain md:w-1/2" />
 }
+function FooterLogo(props){
+    return (
+        <img className="w-64 h-64 bg-white object-contain hidden lg:block" src={props.src} alt="" />
+    )
+}
+function SocialLogo(props){
+    return(
+        <a href={props.href} className="w-12 h-12"><img className="w-full h-full" src={props.src} alt=""/></a>
+    )
+}
 
 export {
     QuoteImg,
@@ -27,4 +37,6 @@ export {
     BackgroundImage,
     ParagraphImage,
     DescribedImage,
+    FooterLogo,
+    SocialLogo,
 }

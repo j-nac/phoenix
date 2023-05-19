@@ -1,4 +1,4 @@
-import { QuoteImg, BackgroundImage, BackgroundVideo } from "../atoms/Images";
+import { QuoteImg, BackgroundImage, BackgroundVideo, SocialLogo } from "../atoms/Images";
 
 function QuoteImage(props){
     return (
@@ -15,8 +15,21 @@ function VideoBackGround(props){
         </>
     )
 }
+function Socials(props){
+    let socials = []
+    Object.keys(props.socials).forEach((e,i)=>{
+        console.log(props.socials[e])
+        socials.push(<SocialLogo key={i} href={e} src={props.socials[e]} />)
+    })
+    return(
+        <div className="flex flex-wrap w-64 max-w-full justify-around mb-6">
+            {socials}
+        </div>
+    )
+}
 
 export {
     QuoteImage,
     VideoBackGround,
+    Socials,
 }

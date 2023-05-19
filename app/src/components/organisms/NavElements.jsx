@@ -1,4 +1,9 @@
 import { HamburgerIcon, MenuSelectPage, TopMenuSelect, LogoSelect } from "../atoms/Buttons"
+import { Copyright } from "../atoms/Text"
+import { FooterLogo } from "../atoms/Images"
+import { Socials } from "../molecules/ImageArea"
+import { MetaLinks } from "../molecules/TextArea"
+import peanuts from "../../images/roasted-peanuts-jpg-1656535069.jpg"
 import $ from "jquery";
 
 function TopMenu(props) {
@@ -42,28 +47,24 @@ function HamburgerMenu(props){
 }
 function Footer(){
     return (
-    <div className="w-full min-w-slide bg-black p-8">
+    <div className="w-full min-w-slide bg-off-black p-8">
         <div className="flex justify-between py-4 md:px-16 px-6">
-            <div className="hidden sm:flex grow-0 items-center">
-                <div className="w-64 h-64 bg-white">LOGO</div>
-            </div>
+            <FooterLogo src={peanuts}/>
             <div className="grow sm:ml-8 p-4 flex flex-col items-center justify-around">
-                <div className="flex flex-wrap w-64 max-w-full justify-around mb-6">
-                    <div className="w-12 h-12 bg-white"></div>
-                    <div className="w-12 h-12 bg-white"></div>
-                    <div className="w-12 h-12 bg-white"></div>
-                </div>
-                <div className="flex justify-center flex-wrap w-full md:w-3/4">
-                    <a href="/" className="p-2 text-3xl text-white">HOME</a>
-                    <a href="/ships" className="p-2 text-3xl text-white">SPACESHIPS</a>
-                    <a href="/destinations" className="p-2 text-3xl text-white">DESTINATIONS</a>
-                    <a href="/training" className="p-2 text-3xl text-white">TRAINING</a>
-                    <a href="/about" className="p-2 text-3xl text-white">ABOUT</a>
+                <Socials socials={{"https://google.com":peanuts,"https://yahoo.com":peanuts}} />
+                <div className="flex justify-center flex-wrap w-full lg:w-3/4">
+                    <TopMenuSelect label="HOME" link="/" mx="1" />
+                    <TopMenuSelect label="SPACESHIPS" link="/ships" mx="1" />
+                    <TopMenuSelect label="DESTINATIONS" link="/destinations" mx="1" />
+                    <TopMenuSelect label="TRAINING" link="/training" mx="1" />
+                    <TopMenuSelect label="ABOUT" link="/about" mx="1" />
+                    <TopMenuSelect label="FLY WITH US" link="/booking" mx="1" />
                 </div>
             </div>
         </div>
         <div className="flex-wrap flex text-white justify-between">
-            <div className="p-1 block">Home Other Other Other</div><div className="p-1 block">Copyright 2043 ASTRAL Technologies</div>
+            <MetaLinks />
+            <Copyright />
         </div>
     </div>
     )

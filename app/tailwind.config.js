@@ -9,8 +9,10 @@ module.exports = {
       'magenta': '#872e62',
       'purple': '#42195e',
       'black': '#09070f',
+      'off-black': '#050306',
       'black-glass': 'rgba(9,7,15,.5)',
       'white': '#f9f7f1',
+      'gray': '#959096',
     },
     fontFamily: {
       'heading': ['Bebas Neue', 'cursive'],
