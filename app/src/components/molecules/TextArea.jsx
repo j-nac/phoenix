@@ -1,7 +1,7 @@
-import {Header1, Tagline1, Subphrase1, BackgroundImageDescription, Quote, Author, Title, CardText} from "../atoms/Text";
-import { ButtonOutlined1 } from "../atoms/Buttons";
-import { Paragraph, ImageText } from "../atoms/Text"
-import { ParagraphImage, DescribedImage, CardImage } from "../atoms/Images"
+import { Header1, Tagline1, Subphrase1, BackgroundImageDescription, Quote, Author, Title, CardText, DestinationPrice, DestinationDescription, FormInput, FormSection} from "../atoms/Text";
+import { ButtonOutlined1, MetaLink } from "../atoms/Buttons";
+import { Paragraph, ImageText, DistinationTitle } from "../atoms/Text"
+import { ParagraphImage, DescribedImage, DestinationImage, CardImage } from "../atoms/Images"
 
 function BackgroundImageLabel(props) {
     let positioningClasses = "absolute";
@@ -70,6 +70,57 @@ function LeftImageText(props){
         </div>
     )
 }
+function MetaLinks(props){
+    return (
+        <div className="flex justify-between mr-12 grow-1">
+            <MetaLink text="TSA LINKS" link="/tsa" />
+            <MetaLink text="TERMS OF SERVICE" link="/tsa" />
+            <MetaLink text="COPYRIGHT" link="/tsa" />
+        </div>
+    )
+}
+
+function DestinationCard(props) {
+    return (
+        <div className="m-5 px-3 py-2 flex flex-col items-center before:bg-transparent hover:before:bg-high-black relative before-bg text-white">
+            <DestinationImage src={props.src} />
+            <DistinationTitle text={props.title} />
+            <DestinationDescription desc={props.desc} />
+            <DestinationPrice price={props.price} />
+            <button onClick={()=>props.forward(1,props.destId)} className="bg-purple p-1 font-paragraph text-2xl mt-3 mb-2 rounded-lg w-1/2">Buy Now</button>
+        </div>
+    )
+}
+
+function BookingForm(props) {
+    return (
+        <form onSubmit={(e)=>{e.preventDefault(); props.updateInfo(e)}}>
+            <div className="flex flex-wrap justify-around">
+                <div className="p-5">
+                    <FormSection title="Contact" />
+                    <FormInput label="First name" type="text" />
+                    <FormInput label="Last name" type="text" />
+                    <FormInput label="Email" type="text" />
+                    <FormInput label="Phone number" type="text" />
+                    <FormInput label="Country" type="text" />
+                    <FormInput label="State/province" type="text" />
+                    <FormInput label="Street address" type="text" />
+                    <FormInput label="City" type="text" />
+                    <FormInput label="Zip code" type="text" />
+                </div>
+                <div className="p-5">
+                    <FormSection title="Billing" />
+                    <FormInput label="Payment method" type="text" />
+                    <FormInput label="Credit card number" type="text" />
+                    <FormInput label="Security code" type="text" />
+                    <FormInput label="Expiration" type="text" />
+                </div>
+            </div>
+
+            <div className="flex justify-center"><input type={"submit"} name={"submit"} value="Buy Now" className="bg-white text-black p-2"/></div>
+        </form>
+    )
+}
 
 function ImageCard(props){
     return(
@@ -88,4 +139,7 @@ export {
     DescContainer,
     LeftImageText,
     ImageCard,
+    MetaLinks,
+    DestinationCard,
+    BookingForm,
 };
