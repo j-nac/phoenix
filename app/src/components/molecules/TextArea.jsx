@@ -1,6 +1,6 @@
 import { Header1, Tagline1, Subphrase1, BackgroundImageDescription, Quote, Author, Title, DestinationPrice, DestinationDescription, FormInput, FormSection} from "../atoms/Text";
 import { ButtonOutlined1, MetaLink } from "../atoms/Buttons";
-import { Paragraph, ImageText } from "../atoms/Text"
+import { Paragraph, ImageText, DistinationTitle } from "../atoms/Text"
 import { ParagraphImage, DescribedImage, DestinationImage } from "../atoms/Images"
 
 function BackgroundImageLabel(props) {
@@ -82,12 +82,12 @@ function MetaLinks(props){
 
 function DestinationCard(props) {
     return (
-        <div className="m-5 px-3 py-2 rounded-md flex flex-col items-center bg-high-black">
+        <div className="m-5 px-3 py-2 flex flex-col items-center before:bg-transparent hover:before:bg-high-black relative before-bg text-white">
             <DestinationImage src={props.src} />
-            <DestinationPrice price={props.price} />
-            <div className="w-full h-1 bg-black"></div>
+            <DistinationTitle text={props.title} />
             <DestinationDescription desc={props.desc} />
-            <button onClick={()=>props.forward(1,props.destId)} className="bg-white text-black p-1 font-paragraph text-2xl mt-3 mb-2 rounded-lg w-1/2">Buy Now</button>
+            <DestinationPrice price={props.price} />
+            <button onClick={()=>props.forward(1,props.destId)} className="bg-purple p-1 font-paragraph text-2xl mt-3 mb-2 rounded-lg w-1/2">Buy Now</button>
         </div>
     )
 }

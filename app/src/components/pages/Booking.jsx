@@ -31,7 +31,7 @@ const Booking = () => {
       <TopMenu homeLink={"#root"} goLabel="FLY WITH US" />
       <ConditionalRenderer current={current} id={0}>
         <Header2 text="1. Select your destination"/>
-        <DestinationSelect forward={updateDestination} src={[peanuts, peanuts, peanuts]} price={['230', '122', '979']} desc={['Wamen', 'hooha', 'a place to go']} />
+        <DestinationSelect forward={updateDestination} src={[peanuts, peanuts, peanuts]} price={['230', '122', '979']} desc={['Wamen pilot so you should buy', 'hooha awooha and some other words', 'a place to go when your feeling down']} />
       </ConditionalRenderer>
       <ConditionalRenderer current={current} id={1}>
         <Header2 text="2. Read the Agreement"/>

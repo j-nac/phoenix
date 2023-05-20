@@ -1,4 +1,5 @@
 import { useOnScreen } from "../Hooks/Text.jsx";
+import {useState} from "react"
 
 function Header1(props) {
     const reference = useOnScreen();
@@ -29,7 +30,7 @@ function Author(props){
 }
 
 function Title(props){
-    return <p className="text-sm lg:text-base xl:text-xl text-white ml-6 my-4 font-paragraph">{props.text}</p>
+    return <p className="text-sm lg:text-base xl:text-xl text-purple ml-6 my-4 font-paragraph">{props.text}</p>
 }
 function QuoteHeader(props){
     return <h1 className="text-white text-center text-3xl md:text-9xl pt-2 mt-12 max-h-[20%] font-heading">{props.text}</h1>
@@ -75,11 +76,18 @@ function Copyright(props){
     return <p className="p-1 block text-sm text-gray grow-0">Copyright 2043 ASTRAL Technologies</p>
 }
 function DestinationPrice(props) {
-    return <h2 className="text-2xl text-white p-3">Price waaa {props.price}</h2>
+    const [ amount, setAmount ] = useState(1)
+    function update(event){
+        setAmount(event.target.value)
+    }
+    return <div className="flex justify-between w-2/3">
+        <input type="number" className="bg-transparent grow-0 w-16" value={amount} min={1} max={10} onChange={update} />
+        <h2 className="text-2xl p-3">${props.price * amount}</h2>
+    </div>
 }
 
 function DestinationDescription(props) {
-    return <p className="text-lg text-white p-2">{props.desc}</p>
+    return <p className="text-sm p-2 text-gray">{props.desc}</p>
 }
 
 function FormInput(props) {
@@ -93,6 +101,10 @@ function FormInput(props) {
 
 function FormSection(props) {
     return <h2 className="text-2xl text-white">{props.title}</h2>
+}
+
+function DistinationTitle(props) {
+    return <h1 className="text-4xl font-heading my-1">{props.text}</h1>
 }
 
 export {
@@ -117,4 +129,5 @@ export {
     DestinationDescription,
     FormInput,
     FormSection,
+    DistinationTitle,
 };

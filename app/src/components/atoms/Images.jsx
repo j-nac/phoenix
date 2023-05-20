@@ -32,7 +32,7 @@ function SocialLogo(props){
 }
 
 function DestinationImage(props) {
-    return <img className="h-64 w-64 p-2" src={props.src} alt="blah" />
+    return <img className="h-64 w-64 p-2 mb-4" src={props.src} alt="blah" />
 }
 
 export {
