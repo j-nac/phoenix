@@ -1,7 +1,7 @@
-import { Header1, Tagline1, Subphrase1, BackgroundImageDescription, Quote, Author, Title, DestinationPrice, DestinationDescription, FormInput, FormSection} from "../atoms/Text";
+import { Header1, Tagline1, Subphrase1, BackgroundImageDescription, Quote, Author, Title, CardText, DestinationPrice, DestinationDescription, FormInput, FormSection} from "../atoms/Text";
 import { ButtonOutlined1, MetaLink } from "../atoms/Buttons";
 import { Paragraph, ImageText, DistinationTitle } from "../atoms/Text"
-import { ParagraphImage, DescribedImage, DestinationImage } from "../atoms/Images"
+import { ParagraphImage, DescribedImage, DestinationImage, CardImage } from "../atoms/Images"
 
 function BackgroundImageLabel(props) {
     let positioningClasses = "absolute";
@@ -122,12 +122,23 @@ function BookingForm(props) {
     )
 }
 
+function ImageCard(props){
+    return(
+        <div className="rounded-sm bg-purple text-center w-1/4 mx-5 my-5 inline">
+            <CardImage src={props.src} />
+            <CardText text={props.name} />
+            <Paragraph text={props.desc} />
+        </div>
+    )
+}
+
 export {
     BackgroundImageLabel,
     QuoteArea,
     SlideParagraph,
     DescContainer,
     LeftImageText,
+    ImageCard,
     MetaLinks,
     DestinationCard,
     BookingForm,

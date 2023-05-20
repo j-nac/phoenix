@@ -35,12 +35,19 @@ function DestinationImage(props) {
     return <img className="h-64 w-64 p-2 mb-4" src={props.src} alt="blah" />
 }
 
+function CardImage(props)
+{
+    return <img className="mx-auto rounded-full my-5 w-[75%] object-center md:block hidden" src={props.src} alt=""/>
+}
+
+
 export {
     QuoteImg,
     BackgroundVideo,
     BackgroundImage,
     ParagraphImage,
     DescribedImage,
+    CardImage,
     FooterLogo,
     SocialLogo,
     DestinationImage,
