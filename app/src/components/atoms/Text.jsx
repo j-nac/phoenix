@@ -75,11 +75,11 @@ function Copyright(props){
     return <p className="p-1 block text-sm text-gray grow-0">Copyright 2043 ASTRAL Technologies</p>
 }
 function DestinationPrice(props) {
-    return <h2 className="text-2xl text-white">Price waaa {props.price}</h2>
+    return <h2 className="text-2xl text-white p-3">Price waaa {props.price}</h2>
 }
 
 function DestinationDescription(props) {
-    return <p className="text-lg text-white">{props.desc}</p>
+    return <p className="text-lg text-white p-2">{props.desc}</p>
 }
 
 function FormInput(props) {

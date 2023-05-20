@@ -63,7 +63,7 @@ function LeftImageTextSlide(props){
 function DestinationSelect(props) {
     return (
         <div className="w-screen min-w-slide relative bg-black px-[15%] py-5">
-            <div className="flex justify-center">
+            <div className="flex justify-center flex-wrap">
                 <DestinationCard src={props.src[0]} price={props.price[0]} desc={props.desc[0]} forward={props.forward} destId={0} />
                 <DestinationCard src={props.src[1]} price={props.price[1]} desc={props.desc[1]} forward={props.forward} destId={1} />
                 <DestinationCard src={props.src[2]} price={props.price[2]} desc={props.desc[2]} forward={props.forward} destId={2} />
@@ -95,6 +95,21 @@ function AgreementSlide(props){
         </div>
     )
 }
+function ProgressBar(props){
+    let classes = "transition-all w-full h-full bg-pink"
+    if(props.current === 0) {
+        classes += " scale-x-0"
+    } else if (props.current === 1){
+        classes += " scale-x-[.3333333]"
+    } else if (props.current === 2){
+        classes += " scale-x-[.6666667]"
+    }
+    return (
+        <div className="w-screen min-w-slide relative bg-black py-5 px-[15%]">
+            <div className="w-full bg-gray h-2"><div className={classes}></div></div>
+        </div>
+    )
+}
 
 export {
     BackgroundImageSlide,
@@ -106,4 +121,5 @@ export {
     DestinationSelect,
     BookingInfoSlide,
     AgreementSlide,
+    ProgressBar,
 };

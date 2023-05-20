@@ -82,11 +82,12 @@ function MetaLinks(props){
 
 function DestinationCard(props) {
     return (
-        <div className="m-5 px-3">
+        <div className="m-5 px-3 py-2 rounded-md flex flex-col items-center bg-high-black">
             <DestinationImage src={props.src} />
             <DestinationPrice price={props.price} />
+            <div className="w-full h-1 bg-black"></div>
             <DestinationDescription desc={props.desc} />
-            <button onClick={()=>props.forward(1,props.destId)} className="bg-white">CLICK ME PLEASE</button>
+            <button onClick={()=>props.forward(1,props.destId)} className="bg-white text-black p-1 font-paragraph text-2xl mt-3 mb-2 rounded-lg w-1/2">Buy Now</button>
         </div>
     )
 }
@@ -94,27 +95,29 @@ function DestinationCard(props) {
 function BookingForm(props) {
     return (
         <form onSubmit={(e)=>{e.preventDefault(); props.updateInfo(e)}}>
-            <FormSection title="Contact" />
-            <FormInput label="First name" type="text" />
-            <FormInput label="Last name" type="text" />
-            <FormInput label="Email" type="text" />
-            <FormInput label="Phone number" type="text" />
-            <FormInput label="Country" type="text" />
-            <FormInput label="State/province" type="text" />
-            <FormInput label="Street address" type="text" />
-            <FormInput label="City" type="text" />
-            <FormInput label="Zip code" type="text" />
+            <div className="flex flex-wrap justify-around">
+                <div className="p-5">
+                    <FormSection title="Contact" />
+                    <FormInput label="First name" type="text" />
+                    <FormInput label="Last name" type="text" />
+                    <FormInput label="Email" type="text" />
+                    <FormInput label="Phone number" type="text" />
+                    <FormInput label="Country" type="text" />
+                    <FormInput label="State/province" type="text" />
+                    <FormInput label="Street address" type="text" />
+                    <FormInput label="City" type="text" />
+                    <FormInput label="Zip code" type="text" />
+                </div>
+                <div className="p-5">
+                    <FormSection title="Billing" />
+                    <FormInput label="Payment method" type="text" />
+                    <FormInput label="Credit card number" type="text" />
+                    <FormInput label="Security code" type="text" />
+                    <FormInput label="Expiration" type="text" />
+                </div>
+            </div>
 
-            <FormSection title="Billing" />
-            <FormInput label="Payment method" type="text" />
-            <FormInput label="Credit card number" type="text" />
-            <FormInput label="Security code" type="text" />
-            <FormInput label="Expiration" type="text" />
-
-            <FormSection title="Health and Safety" />
-            <p className="text-white">You will be contacted within five business days with further information through email regarding health information and safety. Further information on requirements to fly found here.</p>
-            <FormInput label="I understand" type="checkbox" />
-            <FormInput label="Submit" type="submit" />
+            <div className="flex justify-center"><input type={"submit"} name={"submit"} value="Buy Now" className="bg-white text-black p-2"/></div>
         </form>
     )
 }
