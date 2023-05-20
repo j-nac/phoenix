@@ -23,7 +23,7 @@ function DescribedImage(props){
 
 function CardImage(props)
 {
-    return <img className="mx-auto rounded-full my-10 w-[75%] object-center md:block hidden" src={props.src} alt=""/>
+    return <img className="mx-auto rounded-full my-5 w-[75%] object-center md:block hidden" src={props.src} alt=""/>
 }
 
 

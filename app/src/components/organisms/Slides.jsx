@@ -61,15 +61,15 @@ function LeftImageTextSlide(props){
 }
 function CardsSlide(props){
     return(
-        <div className="text-center w-screen min-w-slide">
+        <div className="bg-black text-center w-screen min-w-slide">
             <Header2 text = {props.header}/>
-            <div className="w-screen min-w-slide relative bg-black px-[15%] py-5 flex flex-wrap justify-center">
-                <ImageCard src={props.src1} name={props.name1} desc={props.desc1}/>
-                <ImageCard src={props.src2} name={props.name2} desc={props.desc2}/>
-                <ImageCard src={props.src3} name={props.name3} desc={props.desc3}/>
-                <ImageCard src={props.src4} name={props.name4} desc={props.desc4}/>
-                <ImageCard src={props.src5} name={props.name5} desc={props.desc5}/>
-                <ImageCard src={props.src6} name={props.name6} desc={props.desc6}/>
+            <div className="w-screen min-w-slide relative px-[15%] py-5 flex flex-wrap justify-center">
+                <ImageCard src={props.src[0]} name={props.name[0]} desc={props.desc[0]}/>
+                <ImageCard src={props.src[1]} name={props.name[1]} desc={props.desc[1]}/>
+                <ImageCard src={props.src[2]} name={props.name[2]} desc={props.desc[2]}/>
+                <ImageCard src={props.src[3]} name={props.name[3]} desc={props.desc[3]}/>
+                <ImageCard src={props.src[4]} name={props.name[4]} desc={props.desc[4]}/>
+                <ImageCard src={props.src[5]} name={props.name[5]} desc={props.desc[5]}/>
             </div>
         </div>
     )
