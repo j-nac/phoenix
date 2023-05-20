@@ -86,7 +86,7 @@ function FormInput(props) {
     return (
         <div className="block">
             <label className="block text-white">{props.label}</label>
-            <input type={props.type} />
+            <input type={props.type} name={props.label} required/>
         </div>
     )
 }

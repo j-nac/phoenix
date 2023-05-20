@@ -18,7 +18,6 @@ function VideoBackGround(props){
 function Socials(props){
     let socials = []
     Object.keys(props.socials).forEach((e,i)=>{
-        console.log(props.socials[e])
         socials.push(<SocialLogo key={i} href={e} src={props.socials[e]} />)
     })
     return(

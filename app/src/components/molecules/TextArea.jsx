@@ -93,7 +93,7 @@ function DestinationCard(props) {
 
 function BookingForm(props) {
     return (
-        <form>
+        <form onSubmit={(e)=>{e.preventDefault(); props.updateInfo(e)}}>
             <FormSection title="Contact" />
             <FormInput label="First name" type="text" />
             <FormInput label="Last name" type="text" />

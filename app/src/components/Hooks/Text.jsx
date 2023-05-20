@@ -6,7 +6,7 @@ function useOnScreen(options = {root:null, rootMargin:"0px", threshold:.25}){
     const callback = (entries) => {
         const [ entry ] = entries
         if(entry.isIntersecting)
-            console.log(containerRef.current.classList.add("active"))
+            containerRef.current.classList.add("active")
     }
 
     useEffect(()=>{
