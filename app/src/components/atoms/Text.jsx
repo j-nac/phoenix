@@ -74,6 +74,7 @@ function Subphrase4(props){
 
 function CardText(props){
     return <p className="font-paragraph text-3xl text-white px-3 min-h-48 after:clear-both after:block appear">{props.text}</p>
+}
 
 function Copyright(props){
     return <p className="p-1 block text-sm text-gray grow-0">Copyright 2043 ASTRAL Technologies</p>
@@ -134,4 +135,4 @@ export {
     FormInput,
     FormSection,
     DistinationTitle,
-};
+}
