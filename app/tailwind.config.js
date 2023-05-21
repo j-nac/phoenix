@@ -14,6 +14,7 @@ module.exports = {
       'black-glass': 'rgba(9,7,15,.5)',
       'white': '#f9f7f1',
       'gray': '#959096',
+      'light-gray': '#cccccc',
       'transparent': 'rgba(0,0,0,0)',
     },
     fontFamily: {
