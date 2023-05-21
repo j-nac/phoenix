@@ -8,7 +8,6 @@ import Home from "./components/pages/Home";
 import Info from "./components/pages/Info";
 import NoPage from "./components/pages/NoPage";
 import Ships from "./components/pages/Ships";
-import Technology from "./components/pages/Technology";
 import Training from "./components/pages/Training";
 import "./index.css";
 
@@ -24,7 +23,6 @@ export default function App() {
           <Route path="info" element={<Info />} />
           <Route path="*" element={<NoPage />} />
           <Route path="ships" element={<Ships />} />
-          <Route path="technology" element={<Technology />} />
           <Route path="training" element={<Training />} />
         </Route>
       </Routes>
