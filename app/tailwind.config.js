@@ -25,6 +25,9 @@ module.exports = {
         'slide': '600px',
         'menu': '400px',
       },
+      maxWidth: {
+        'slide': '1100px',
+      },
       minHeight: {
         'slide': '600px',
         'slide-menu': 'calc(600px - 60px)',

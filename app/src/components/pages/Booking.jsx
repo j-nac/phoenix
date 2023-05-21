@@ -30,17 +30,23 @@ const Booking = () => {
       <HamburgerMenu homeLink={"#root"} goLabel="FLY WITH US" />
       <TopMenu homeLink={"#root"} goLabel="FLY WITH US" />
       <ConditionalRenderer current={current} id={0}>
-        <Header2 text="1. Select your destination"/>
+        <div className="max-w-slide mx-auto w-full">
+          <Header2 text="1. Select your destination"/>
+        </div>
         <DestinationSelect forward={updateDestination} src={[peanuts, peanuts, peanuts]} price={['230', '122', '979']} desc={['Wamen pilot so you should buy', 'hooha awooha and some other words', 'a place to go when your feeling down']} />
       </ConditionalRenderer>
       <ConditionalRenderer current={current} id={1}>
-        <Header2 text="2. Read the Agreement"/>
-        <button onClick={back} className="text-white p-3 text-2xl">Back</button>
+        <div className="max-w-slide mx-auto w-full">
+          <Header2 text="2. Read the Agreement"/>
+          <button onClick={back} className="text-white p-3 text-2xl">Back</button>
+        </div>
         <AgreementSlide advance={advance}/>
       </ConditionalRenderer>
       <ConditionalRenderer current={current} id={2}>
-        <Header2 text="3. Finalize your order"/>
-        <button onClick={back} className="text-white p-3 text-2xl">Back</button>
+        <div className="max-w-slide mx-auto w-full">
+          <Header2 text="3. Finalize your order"/>
+          <button onClick={back} className="text-white p-3 text-2xl">Back</button>
+        </div>
         <BookingInfoSlide updateInfo={updateInfo} />
       </ConditionalRenderer>
       <ConditionalRenderer current={current} id={3}>

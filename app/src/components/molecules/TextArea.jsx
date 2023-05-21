@@ -95,7 +95,7 @@ function DestinationCard(props) {
 function BookingForm(props) {
     return (
         <form onSubmit={(e)=>{e.preventDefault(); props.updateInfo(e)}}>
-            <div className="flex flex-wrap justify-around">
+            <div className="flex flex-wrap justify-around max-w-slide mx-auto">
                 <div className="p-5">
                     <FormSection title="Contact" />
                     <FormInput label="First name" type="text" />
@@ -117,7 +117,9 @@ function BookingForm(props) {
                 </div>
             </div>
 
-            <div className="flex justify-center"><input type={"submit"} name={"submit"} value="Buy Now" className="bg-white text-black p-2"/></div>
+            <div className="flex justify-center">
+                <input type={"submit"} name={"submit"} value="Buy Now" className="text-black p-2 font-paragraph bg-purple text-white text-2xl rounded-lg w-36"/>
+                </div>
         </form>
     )
 }

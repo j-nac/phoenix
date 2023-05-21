@@ -96,15 +96,15 @@ function DestinationDescription(props) {
 
 function FormInput(props) {
     return (
-        <div className="block">
-            <label className="block text-white">{props.label}</label>
+        <div className="block my-1 font-paragraph">
+            <label className="block text-white my-1">{props.label}</label>
             <input type={props.type} name={props.label} required/>
         </div>
     )
 }
 
 function FormSection(props) {
-    return <h2 className="text-2xl text-white">{props.title}</h2>
+    return <h2 className="text-4xl text-white font-heading mb-3">{props.title}</h2>
 }
 
 function DistinationTitle(props) {
