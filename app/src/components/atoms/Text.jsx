@@ -111,6 +111,7 @@ function DistinationTitle(props) {
     return <h1 className="text-4xl font-heading my-1">{props.text}</h1>
 }
 
+//
 export {
     Header1,
     Tagline1,
