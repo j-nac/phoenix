@@ -19,11 +19,9 @@ function QuoteSlide(props) {
     return (
     <div className="bg-black w-screen p-3 min-w-slide">
         <QuoteHeader text={props.header}/>
-        <div className="flex items-center justify-around w-full items-stretch mt-6 mb-6 md:mt-12 md:mb-16">
+        <div className="flex items-center justify-around w-full items-stretch mt-6 mb-6 md:mt-12 md:mb-16 max-w-slide mx-auto">
             <QuoteImage image={props.image}/>
-            <div className="w-full h-full max-w-slide relative mx-auto">
-                <QuoteArea quote={props.quote} author={props.author} title={props.title} />
-            </div>
+            <QuoteArea quote={props.quote} author={props.author} title={props.title} />
         </div>
     </div>
     );
