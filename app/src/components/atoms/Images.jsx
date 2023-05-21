@@ -22,7 +22,7 @@ function DescribedImage(props){
 }
 function FooterLogo(props){
     return (
-        <img className="w-64 h-64 bg-white object-contain hidden lg:block" src={props.src} alt="" />
+        <img className="w-64 h-64 object-contain hidden lg:block" src={props.src} alt="" />
     )
 }
 function SocialLogo(props){

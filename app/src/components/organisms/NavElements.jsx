@@ -3,7 +3,12 @@ import { Copyright } from "../atoms/Text"
 import { FooterLogo } from "../atoms/Images"
 import { Socials } from "../molecules/ImageArea"
 import { MetaLinks } from "../molecules/TextArea"
-import peanuts from "../../images/roasted-peanuts-jpg-1656535069.jpg"
+import facebook from "../../images/icons8-facebook-48.png"
+import instagram from "../../images/icons8-instagram-48.png"
+import twitter from "../../images/icons8-twitter-48.png"
+import youtube from "../../images/icons8-youtube-48.png"
+import tiktok from "../../images/icons8-tiktok-48.png"
+import logo from "../../images/icon.png"
 import $ from "jquery";
 
 function TopMenu(props) {
@@ -49,9 +54,9 @@ function Footer(props){
     return (
     <div className="w-full min-w-slide bg-off-black p-8">
         <div className="flex justify-between py-4 md:px-16 px-6">
-            <FooterLogo src={peanuts}/>
+            <FooterLogo src={logo}/>
             <div className="grow sm:ml-8 p-4 flex flex-col items-center justify-around">
-                <Socials socials={{"https://google.com":peanuts,"https://yahoo.com":peanuts}} />
+                <Socials socials={{"https://www.facebook.com/":facebook,"https://www.instagram.com/":instagram, "https://twitter.com/":twitter, "https://www.youtube.com/":youtube, "https://www.tiktok.com/":tiktok}} />
                 <div className="flex justify-center flex-wrap w-full lg:w-3/4">
                     <TopMenuSelect label="HOME" link="/" mx="1" />
                     <TopMenuSelect label="SPACESHIPS" link="/ships" mx="1" />
