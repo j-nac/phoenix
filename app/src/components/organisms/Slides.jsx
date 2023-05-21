@@ -128,10 +128,18 @@ function AgreementSlide(props){
             <div className="w-[75%] min-w-slide max-w-slide mx-auto relative bg-white px-[5%] py-5 overflow-scroll max-h-screen">
                 <h1 className="text-3xl">SAFETY AGREEMENT</h1>
                 <hr></hr>
-                <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-                </p>
+                <p>I, the undersigned, acknowledge that I have voluntarily chosen to participate in a space experience provided by Astral. I understand that space travel is an inherently risky activity and involves potential hazards, including but not limited to, loss of life, physical injury, illness, property damage, and emotional trauma.</p>
+                <br />
+                <p>In consideration of being allowed to participate in this space experience, I hereby assume all risks and release Astral, its officers, directors, employees, agents, and affiliates from any and all liability, claims, demands, actions, or causes of action arising out of my participation in this space tourism experience.</p>
+                <br />
+                <p>I certify that I am physically and mentally capable of participating in this activity and have no medical conditions that would prevent me from doing so. I understand that Astral has advised me to consult with a medical professional prior to participating in this activity.</p>
+                <br />
+                <p>I agree to comply with all safety instructions provided by Astral and its employees and understand that failure to do so may result in expulsion from the activity without refund.</p>
+                <br />
+                <p>I understand that this waiver of liability and assumption of risk is binding upon myself, my heirs, executors, and administrators.</p>
+                <br />
+                <p>I have read this waiver of liability and assumption of risk and fully understand its contents. I acknowledge thatI am signing this document voluntarily and without any inducement, assurance, or guarantee being made to me.</p>
+                <br />
                 <p>BY CLICKING CONTINUE, YOU AGREE TO THE ABOVE TERMS</p>
                 <button onClick={props.advance} className="text-white bg-black">CONTINUE</button>
             </div>
@@ -148,7 +156,7 @@ function ProgressBar(props){
         classes += " scale-x-[.6666667]"
     }
     return (
-        <div className="w-screen min-w-slide relative bg-black py-5 px-[15%]">
+        <div className="w-screen min-w-slide bg-black py-5 px-[15%] bottom-0">
             <div className="w-full bg-gray h-2"><div className={classes}></div></div>
         </div>
     )
