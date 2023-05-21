@@ -14,6 +14,7 @@ const Info = () => {
   <p>https://images.nasa.gov/details/KSC-20200924-PH-SPX01_0008 KSC-20200924-PH-SPX01_0008~medium.jpg Two people in suits looking at each other</p>
   <p>Company logo done in house. Converted to favicons with https://favicon.io/favicon-converter/</p>
   <p>Facebook, Instagram, Twitter, Youtube, TikTok icons from https://icons8.com/</p>
+  <p>SSC-20081001-S01788H~small.jpg https://images.nasa.gov/details/SSC-20081001-S01788H NASA engine image</p>
   </>
   
 };
