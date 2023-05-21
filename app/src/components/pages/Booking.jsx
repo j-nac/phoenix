@@ -44,7 +44,7 @@ const Booking = () => {
       </ConditionalRenderer>
       <ConditionalRenderer current={current} id={2}>
         <div className="max-w-slide mx-auto w-full">
-          <Header2 text="3. Finalize your order"/>
+          <Header2 text="3. Enter your Details"/>
           <button onClick={back} className="text-white p-3 text-2xl">Back</button>
         </div>
         <BookingInfoSlide updateInfo={updateInfo} />

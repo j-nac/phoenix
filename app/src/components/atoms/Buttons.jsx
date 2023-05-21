@@ -8,7 +8,7 @@ function ButtonOutlined1(props) {
 }
 
 function LogoSelect(props) {
-    return <a href={props.link} className="text-xl my-auto text-white font-paragraph flex items-center"><img src={icon} alt="" className="h-12 mr-1"/>STRAL</a>
+    return <a href={props.link} className="text-xl my-auto text-white font-paragraph flex items-center"><img src={icon} alt="" className="h-10 mr-1"/>STRAL</a>
 }
 
 // Menu fly with us type button
