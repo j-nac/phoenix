@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
-import logo from "../../images/logo-1.png"
+import icon from "../../images/icon.png"
 
 // Learn more type button
 function ButtonOutlined1(props) {
@@ -8,7 +8,7 @@ function ButtonOutlined1(props) {
 }
 
 function LogoSelect(props) {
-    return <a href={props.link} className="text-2xl text-white font-paragraphing">{props.label}</a>
+    return <a href={props.link} className="text-xl my-auto text-white font-paragraph flex items-center"><img src={icon} alt="" className="h-12 mr-1"/>STRAL</a>
 }
 
 // Menu fly with us type button
@@ -29,7 +29,7 @@ function MenuSelectPage(props) {
 }
 
 function HomeIcon(props) {
-    return <a className='text-white text-4xl' href={props.homeLink}><img src={logo} alt="" className="h-16"/></a>
+    return <a className='text-white text-4xl' href={props.homeLink}><img src={icon} alt="" className="h-16"/></a>
 }
 
 function TopMenuSelect(props){

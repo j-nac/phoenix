@@ -7,13 +7,12 @@ import facebook from "../../images/icons8-facebook-48.png"
 import instagram from "../../images/icons8-instagram-48.png"
 import twitter from "../../images/icons8-twitter-48.png"
 import youtube from "../../images/icons8-youtube-48.png"
-import tiktok from "../../images/icons8-tiktok-48.png"
 import logo from "../../images/icon.png"
 import $ from "jquery";
 
 function TopMenu(props) {
     return (
-        <div className="sticky top-0 h-menu bg-black-glass z-50 items-end justify-around hidden md:flex pb-3 backdrop-blur-md">
+        <div className="sticky top-0 h-menu bg-black-glass z-50 items-end justify-around hidden md:flex backdrop-blur-md flex items-center">
             <LogoSelect label="LOGO HERE" link="/" />
             <TopMenuSelect label="SPACESHIPS" link="/ships" />
             <TopMenuSelect label="DESTINATIONS" link="/destinations" />
@@ -56,7 +55,7 @@ function Footer(props){
         <div className="flex justify-between py-4 md:px-16 px-6">
             <FooterLogo src={logo}/>
             <div className="grow sm:ml-8 p-4 flex flex-col items-center justify-around">
-                <Socials socials={{"https://www.facebook.com/":facebook,"https://www.instagram.com/":instagram, "https://twitter.com/":twitter, "https://www.youtube.com/":youtube, "https://www.tiktok.com/":tiktok}} />
+                <Socials socials={{"https://www.facebook.com/":facebook,"https://www.instagram.com/":instagram, "https://twitter.com/":twitter, "https://www.youtube.com/":youtube}} />
                 <div className="flex justify-center flex-wrap w-full lg:w-3/4">
                     <TopMenuSelect label="HOME" link="/" mx="1" />
                     <TopMenuSelect label="SPACESHIPS" link="/ships" mx="1" />
