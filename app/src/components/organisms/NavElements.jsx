@@ -62,7 +62,7 @@ function Footer(props){
                     <TopMenuSelect label="DESTINATIONS" link="/destinations" mx="1" />
                     <TopMenuSelect label="TRAINING" link="/training" mx="1" />
                     <TopMenuSelect label="ABOUT" link="/about" mx="1" />
-                    <TopMenuSelect label="FLY WITH US" link="/booking" mx="1" />
+                    <TopMenuSelect label="BUY NOW" link="/booking" mx="1" />
                 </div>
             </div>
         </div>

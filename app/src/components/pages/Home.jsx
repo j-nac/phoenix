@@ -4,7 +4,6 @@ import rocket1 from "../../images/Optimized-spacex-uj3hvdfQujI-unsplash.jpg"
 import moon1 from "../../images/Optimized-nicolas-thomas-wKlqqfNTLsI-unsplash.jpg"
 import people1 from "../../images/Optimized-christina-wocintechchat-com-faEfWCdOKIg-unsplash.jpg"
 import training1 from "../../images/s84-36901~medium.jpg"
-import safety2 from "../../images/jsc2022e045238~medium.jpg"
 import { VideoSlide, BackgroundImageSlide, QuoteSlide  } from "../organisms/Slides";
 import { TopMenu, HamburgerMenu, Footer } from "../organisms/NavElements";
 
@@ -18,7 +17,6 @@ const Home = () => {
         <BackgroundImageSlide main="DESTINATIONS" label="LEARN MORE" link="/destinations" background={`url(${moon1}`} position="topLeft" description="See the moon closer than ever before with our first-class lunar experience"/>
         <QuoteSlide quote="Astral lies at the bleeding edge of innovation, bringing science fiction to life." author="Aaron Donson" title="Former NASA engineer and technology editor of the Springfield Inquirer" image={peanuts} header="A Revolution in Travel"/>
         <BackgroundImageSlide main="TRAINING" label="LEARN MORE" link="/training" background={`linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${training1}`} position="topLeft" description="Common diving training in our world class facility in Telluride, CO" />
-        <BackgroundImageSlide main="SAFETY" sub="Setting the Standard" label="LEARN MORE" link="/safety" background={`url(${safety2}`} position="bottomRight" />
         <BackgroundImageSlide main="ABOUT US" sub="You Are Our Mission" label="LEARN MORE" link="/about" background={`linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${people1}`} position="bottomLeft" />
         <Footer />
     </>
