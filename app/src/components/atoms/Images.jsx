@@ -14,7 +14,7 @@ function BackgroundImage(props){
 }
 
 function ParagraphImage(props){
-    return <img className="float-right w-48 mx-8 object-contain md:block hidden" src={props.src} alt=""/>
+    return <img className="float-right w-60 ml-8 object-contain md:block hidden" src={props.src} alt=""/>
 }
 
 function DescribedImage(props){
