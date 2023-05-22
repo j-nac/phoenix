@@ -1,9 +1,12 @@
-import peanuts from "../../images/roasted-peanuts-jpg-1656535069.jpg";
+import Rocket from "../../images/martin-jaros-osAeymdDVyk-unsplash.jpg";
 import { DestinationSelect, BookingInfoSlide, AgreementSlide, TextSlide, ProgressBar } from "../organisms/Slides";
 import { ConditionalRenderer } from "../organisms/Containers";
 import { TopMenu, HamburgerMenu, Footer } from "../organisms/NavElements";
 import { Header2 } from "../atoms/Text";
 import { useState } from "react";
+import Space from "../../images/ivana-cajina-asuyh-_ZX54-unsplash.jpg";
+import Orbit from "../../images/nasa-yZygONrUBe8-unsplash.jpg";
+import Moon from "../../images/chuttersnap-pE8WW245aik-unsplash.jpg";
 
 const Booking = () => {
   const [ current, setCurrent ] = useState(0)
@@ -36,7 +39,7 @@ const Booking = () => {
             <Header2 text="1. Select your destination"/>
           </div>
         </div>
-        <DestinationSelect forward={updateDestination} src={[peanuts, peanuts, peanuts]} price={['5000', '20000', '60000']} desc={['Feel zero gravity and experience incredible views of space and Earth.', 'Spend time in our luxury space station and spacewalks.', 'Experience stepping foot on the lunar surface.']} />
+        <DestinationSelect forward={updateDestination} src={[peanuts, peanuts, peanuts]} price={['5000', '20000', '70000']} desc={['Explore space, get incredible views of Earth, and feel zero gravity.', 'Experience our luxury space station and go on spacewalks.', 'Take a leap and feel the lunar soil under your feet.']} />
       </ConditionalRenderer>
       <ConditionalRenderer current={current} id={1}>
         <div className="w-full bg-black pt-2">
@@ -57,7 +60,7 @@ const Booking = () => {
         <BookingInfoSlide updateInfo={updateInfo} />
       </ConditionalRenderer>
       <ConditionalRenderer current={current} id={3}>
-        <TextSlide src={peanuts} header="Your Email Will Arrive Soon" paragraph={["At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.", "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo", "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem"]} />
+        <TextSlide src={Rocket} header="Your Email Will Arrive Soon" paragraph={["	Thank you for booking with Astral, we hope it's been a seamless experience!", "Before you complete your checkout please be sure to review your itinerary details, verify the accuracy of travel dates, and passenger details. If you need any assistance our customer support team is always available to help you, please don’t hesitate to reach out.", "Once you have completed this checkout process you will receive an email confirming all of your booking information. Keep this email for reference and present it upon arrival at our facilities.", "Please note that all bookings are subject to our terms and conditions which can be reviewed on our website.", "We’re thrilled to embark on this extraordinary journey alongside you. Look forward to creating unforgettable memories in the cosmos!"]} />
       </ConditionalRenderer>
       <Footer placeHolder={[destinationId, personalInfo]} />
     </>
