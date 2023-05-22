@@ -17,8 +17,9 @@ function Subphrase1(props) {
 }
 
 function BackgroundImageDescription(props){
+    const reference = useOnScreen();
     return (
-        <p className="absolute top-1/2 -translate-y-1/2 right-12 text-light-gray text-2xl max-w-[24rem] ml-12">{props.description}</p>
+        <p className="absolute top-1/2 -translate-y-1/2 right-12 text-light-gray text-2xl max-w-[24rem] ml-12"ref={reference}><span className="top-32 opacity-25 relative transition-all duration-500">{props.description}</span></p>
     )
 }
 function Quote(props){
