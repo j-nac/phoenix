@@ -9,8 +9,11 @@ import person6 from "../../images/shiona-das-ORQiesQvZvg-unsplash.jpg";
 import TopImage from "../../images/campaign-creators-gMsnXqILjp4-unsplash.jpg";
 import Founding from "../../images/jean-philippe-delberghe-YwSf1o8s79c-unsplash.jpg";
 import Rocket from "../../images/terence-burke-WV7ZMt3RjsQ-unsplash.jpg";
-
+import { useEffect } from "react";
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <HamburgerMenu/>

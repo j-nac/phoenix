@@ -5,7 +5,11 @@ import rocket from "../../images/201304210007HQ~small.jpg";
 import satellite from "../../images/Optimized-spacex-VBNb52J8Trk-unsplash.jpg";
 import cabin from "../../images/Optimized-nasa-CpHNKNRwXps-unsplash.jpg"
 import "../../styles/home.css";
+import { useEffect } from "react";
 const Ships = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <HamburgerMenu />

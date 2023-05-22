@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const Info = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
   <div className="text-white px-[15%] py-5">
   <h1 className="text-5xl font-bold">TSA Information</h1>

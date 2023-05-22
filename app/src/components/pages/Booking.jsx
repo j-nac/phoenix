@@ -7,8 +7,12 @@ import { useState } from "react";
 import Space from "../../images/ivana-cajina-asuyh-_ZX54-unsplash.jpg";
 import Orbit from "../../images/nasa-yZygONrUBe8-unsplash.jpg";
 import Moon from "../../images/chuttersnap-pE8WW245aik-unsplash.jpg";
+import { useEffect } from "react";
 
 const Booking = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const [ current, setCurrent ] = useState(0)
   const [ destinationId, setDestination ] = useState(0)
   const [ personalInfo, sellData ] = useState([])

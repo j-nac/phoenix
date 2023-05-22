@@ -7,8 +7,11 @@ import people1 from "../../images/Optimized-christina-wocintechchat-com-faEfWCdO
 import training1 from "../../images/s84-36901~medium.jpg"
 import { VideoSlide, BackgroundImageSlide, QuoteSlide  } from "../organisms/Slides";
 import { TopMenu, HamburgerMenu, Footer } from "../organisms/NavElements";
-
+import { useEffect } from "react";
 const Home = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
     return (
     <>
         <HamburgerMenu homeLink={"#root"} goLabel="FLY WITH US" />

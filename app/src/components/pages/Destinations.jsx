@@ -6,7 +6,11 @@ import moon from "../../images/Optimized-neven-krcmarek-3ym-ev0Pe58-unsplash.jpg
 import earth from "../../images/Optimized-nasa-Q1p7bh3SHj8-unsplash.jpg";
 import { VideoSlide, BackgroundImageSlide, TextSlide  } from "../organisms/Slides";
 import { TopMenu, HamburgerMenu, Footer } from "../organisms/NavElements";
+import { useEffect } from "react";
 const Destinations = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
     return (
       <>
         <HamburgerMenu homeLink={"#root"} goLabel="FLY WITH US" />

@@ -5,8 +5,11 @@ import training2 from "../../images/KSC-2014-2786~small.jpg"
 import talking1 from "../../images/KSC-20200302-PH-JBS02_0031~small.jpg"
 import talking2 from "../../images/NHQ202201270018~medium.jpg"
 import rocket from "../../images/Optimized-spacex--p-KCm6xB9I-unsplash.jpg"
-
+import { useEffect } from "react";
 const Training = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
     return (
       <>
        <HamburgerMenu />
