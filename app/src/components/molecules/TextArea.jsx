@@ -82,7 +82,7 @@ function MetaLinks(props){
 
 function DestinationCard(props) {
     return (
-        <div className="m-5 px-3 py-2 w-[22rem] flex flex-col items-center before:bg-transparent hover:before:bg-high-black relative before-bg text-white">
+        <div className="m-5 px-3 py-2 w-64 flex flex-col items-center before:bg-transparent hover:before:bg-high-black relative before-bg text-white">
             <DestinationImage src={props.src} />
             <DistinationTitle text={props.title} />
             <DestinationDescription desc={props.desc} />
