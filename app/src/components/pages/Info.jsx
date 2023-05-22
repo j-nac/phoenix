@@ -28,7 +28,7 @@ const Info = () => {
     <li>https://svs.gsfc.nasa.gov/13537 NASA moon video</li>
     <li>https://images.nasa.gov/details/s84-36901 s84-36901~medium.jpg NASA diving training video</li>
     <li>https://images.nasa.gov/details/KSC-20200302-PH-KLS01_0011 KSC-20200302-PH-KLS01_0011~medium.jpg NASA safety training video</li>
-    <li></li>
+    <li>https://www.pexels.com/search/videos/planets/ https://mixkit.co/free-stock-video/space/?page=2 https://pixabay.com/videos/search/space/ Destinations video</li>
     <li></li>
     <li></li>
     <li></li>
