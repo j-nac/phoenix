@@ -73,9 +73,9 @@ function LeftImageText(props){
 function MetaLinks(props){
     return (
         <div className="flex justify-between mr-12 grow-1">
-            <MetaLink text="TSA INFO" link="/info" />
-            <MetaLink text="TERMS OF SERVICE" link="/info" />
-            <MetaLink text="COPYRIGHT" link="/info" />
+            <MetaLink text="TSA INFO" link="/#/info" />
+            <MetaLink text="TERMS OF SERVICE" link="/#/info" />
+            <MetaLink text="COPYRIGHT" link="/#/info" />
         </div>
     )
 }
