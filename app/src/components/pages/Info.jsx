@@ -36,7 +36,7 @@ const Info = () => {
     <li>https://unsplash.com/photos/d2MSDujJl2g Person Five</li>
     <li>https://unsplash.com/photos/IF9TK5Uy-KI Person Six</li>
     <li>https://unsplash.com/photos/gMsnXqILjp4 About Us Header</li>
-    <li></li>
+    <li>https://unsplash.com/photos/YwSf1o8s79c Founding Image</li>
     <li></li>
     <li></li>
     <li></li>

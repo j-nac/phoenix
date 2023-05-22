@@ -126,7 +126,7 @@ function BookingForm(props) {
 
 function ImageCard(props){
     return(
-        <div className="rounded-sm bg-purple text-center w-1/4 mx-5 my-5 inline">
+        <div className="rounded-md bg-high-black text-center w-1/4 mx-5 my-5 inline">
             <CardImage src={props.src} />
             <CardText text={props.name} />
             <Paragraph text={props.desc} />
