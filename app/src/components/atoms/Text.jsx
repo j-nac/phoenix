@@ -94,7 +94,7 @@ function DestinationPrice(props) {
     }
     return <div className="flex justify-between w-2/3">
         <input type="number" className="bg-transparent grow-0 w-16" value={amount} min={1} max={10} onChange={update} />
-        <h2 className="text-2xl p-3">${props.price * amount} Million</h2>
+        <h2 className="text-2xl p-3">${props.price * amount} k</h2>
     </div>
 }
 
