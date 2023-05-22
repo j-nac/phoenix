@@ -45,7 +45,7 @@ const Booking = () => {
         <div className="w-full bg-black pt-2">
           <div className="max-w-slide mx-auto w-full">
             <Header2 text="2. Read the Agreement"/>
-            <button onClick={back} className="text-white p-3 text-2xl">Back</button>
+            <button onClick={back} className="text-white px-4 py-2 mt-2 text-lg border-solid border-white border-2">Back</button>
           </div>
         </div>
         <AgreementSlide advance={advance}/>
@@ -54,7 +54,7 @@ const Booking = () => {
         <div className="w-full bg-black pt-2">
           <div className="max-w-slide mx-auto w-full">
             <Header2 text="3. Enter your Details"/>
-            <button onClick={back} className="text-white p-3 text-2xl">Back</button>
+            <button onClick={back} className="text-white px-4 py-2 mt-2 text-lg border-solid border-white border-2">Back</button>
           </div>
         </div>
         <BookingInfoSlide updateInfo={updateInfo} />

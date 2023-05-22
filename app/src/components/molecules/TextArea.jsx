@@ -87,7 +87,7 @@ function DestinationCard(props) {
             <DistinationTitle text={props.title} />
             <DestinationDescription desc={props.desc} />
             <DestinationPrice price={props.price} />
-            <button onClick={()=>props.forward(1,props.destId)} className="bg-purple p-1 font-paragraph text-2xl mt-3 mb-2 rounded-lg w-1/2">Buy Now</button>
+            <button onClick={()=>props.forward(1,props.destId)} className="bg-purple p-1 font-paragraph text-2xl mt-3 mb-2 rounded-sm w-1/2">Buy Now</button>
         </div>
     )
 }
