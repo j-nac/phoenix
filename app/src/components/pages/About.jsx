@@ -1,6 +1,5 @@
 import { TextSlide, LeftImageTextSlide, BackgroundImageSlide, CardsSlide, MapSlide} from "../organisms/Slides";
 import { TopMenu, HamburgerMenu, Footer } from "../organisms/NavElements";
-import peanuts from "../../images/roasted-peanuts-jpg-1656535069.jpg";
 import person1 from "../../images/erik-lucatero-d2MSDujJl2g-unsplash.jpg";
 import person2 from "../../images/giovanni-ilardi-ZjAHXxPuY70-unsplash.jpg";
 import person3 from "../../images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg";
