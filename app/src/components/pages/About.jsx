@@ -7,12 +7,13 @@ import person3 from "../../images/jake-nackos-IF9TK5Uy-KI-unsplash.jpg";
 import person4 from "../../images/joseph-gonzalez-iFgRcqHznqg-unsplash.jpg";
 import person5 from "../../images/sandro-g-photography-tk7rYB-0wVI-unsplash.jpg";
 import person6 from "../../images/shiona-das-ORQiesQvZvg-unsplash.jpg";
+import TopImage from "../../images/campaign-creators-gMsnXqILjp4-unsplash.jpg";
 
 const About = () => {
   return (
     <>
       <HamburgerMenu/>
-      <BackgroundImageSlide main="ABOUT US" background={`url(${peanuts}`} position="bottomLeft" fit="menu"/> 
+      <BackgroundImageSlide main="ABOUT US" background={`url(${TopImage}`} position="bottomLeft" fit="menu"/> 
       <TopMenu/>
       <LeftImageTextSlide src={peanuts} header="OUR FOUNDING" desc={["Astral emerged from the vision and passion of two graduate students and a tech entrepreneur seeking to reach beyond the stars. Founded in 2023, Astral got off the ground operating on a shoestring budget and an impossible deadline: send a rocket to space in three years.", "Since then, Astral has led a record of doing the impossible to become the largest space tourism company in the world (or galaxy for that matter). With Astral, anything can be achieved. Fueled by our firm belief in the ability and ingenuity of humanity, and the goal of making space travel accessible to everyone, we have propelled humanity to new heights."]} />
       <div className="bg-black w-full"><div className="w-full max-w-slide mx-auto"><div className="mx-auto w-2/3 bg-white h-[2px]"/></div></div>

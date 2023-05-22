@@ -29,12 +29,12 @@ const Info = () => {
     <li>https://images.nasa.gov/details/s84-36901 s84-36901~medium.jpg NASA diving training video</li>
     <li>https://images.nasa.gov/details/KSC-20200302-PH-KLS01_0011 KSC-20200302-PH-KLS01_0011~medium.jpg NASA safety training video</li>
     <li>https://www.pexels.com/search/videos/planets/ https://mixkit.co/free-stock-video/space/?page=2 https://pixabay.com/videos/search/space/ Destinations video</li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>https://unsplash.com/photos/ORQiesQvZvg Person One</li>
+    <li>https://unsplash.com/photos/ZjAHXxPuY70 Person Two</li>
+    <li>https://unsplash.com/photos/tk7rYB-0wVI Person Three</li>
+    <li>https://unsplash.com/photos/iFgRcqHznqg Person Four</li>
+    <li>https://unsplash.com/photos/d2MSDujJl2g Person Five</li>
+    <li>https://unsplash.com/photos/IF9TK5Uy-KI Person Six</li>
     <li></li>
     <li></li>
     <li></li>
