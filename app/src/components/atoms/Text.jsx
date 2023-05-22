@@ -99,7 +99,7 @@ function DestinationPrice(props) {
 }
 
 function DestinationDescription(props) {
-    return <p className="text-sm p-2 text-gray">{props.desc}</p>
+    return <p className="text-sm p-2 text-gray w-64">{props.desc}</p>
 }
 
 function FormInput(props) {

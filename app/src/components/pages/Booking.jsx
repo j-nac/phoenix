@@ -36,7 +36,7 @@ const Booking = () => {
             <Header2 text="1. Select your destination"/>
           </div>
         </div>
-        <DestinationSelect forward={updateDestination} src={[peanuts, peanuts, peanuts]} price={['230', '122', '979']} desc={['Good pilot so you should buy', 'hooha awooha and some other words', 'a place to go when your feeling down']} />
+        <DestinationSelect forward={updateDestination} src={[peanuts, peanuts, peanuts]} price={['5000', '20000', '60000']} desc={['Feel zero gravity and experience incredible views of space and Earth.', 'Spend time in our luxury space station and spacewalks.', 'Experience stepping foot on the lunar surface.']} />
       </ConditionalRenderer>
       <ConditionalRenderer current={current} id={1}>
         <div className="w-full bg-black pt-2">

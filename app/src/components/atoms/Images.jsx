@@ -4,7 +4,7 @@ function QuoteImg(props){
 
 function BackgroundVideo(props){
     return (
-        <video className="h-screen w-screen min-w-slide min-h-slide absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 object-cover hidden sm:block" poster={props.altimg} autoPlay loop muted>
+        <video className="h-screen w-screen min-w-slide min-h-slide absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 object-cover hidden sm:block brightness-50" poster={props.altimg} autoPlay loop muted>
             <source src={props.file} type="video/mp4" />
         </video>
     )
