@@ -33,7 +33,7 @@ const Booking = () => {
     setCurrent(current-1)
   }
   return (
-    <>
+    <div className="min-h-screen bg-black">
       <HamburgerMenu homeLink={"#root"} goLabel="FLY WITH US" />
       <TopMenu homeLink={"#root"} goLabel="FLY WITH US" />
       <ProgressBar current={current} />
@@ -67,7 +67,7 @@ const Booking = () => {
         <TextSlide src={Rocket} header="Your Email Will Arrive Soon" paragraph={["	Thank you for booking with Astral, we hope it's been a seamless experience!", "Before you complete your checkout please be sure to review your itinerary details, verify the accuracy of travel dates, and passenger details. If you need any assistance our customer support team is always available to help you, please don’t hesitate to reach out.", "Once you have completed this checkout process you will receive an email confirming all of your booking information. Keep this email for reference and present it upon arrival at our facilities.", "Please note that all bookings are subject to our terms and conditions which can be reviewed on our website.", "We’re thrilled to embark on this extraordinary journey alongside you. Look forward to creating unforgettable memories in the cosmos!"]} />
       </ConditionalRenderer>
       <Footer placeHolder={[destinationId, personalInfo]} />
-    </>
+    </div>
   )
 };
 
