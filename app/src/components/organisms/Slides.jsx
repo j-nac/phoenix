@@ -125,7 +125,7 @@ function BookingInfoSlide(props) {
 function AgreementSlide(props){
     return (
         <div className="w-screen min-w-slide relative bg-black py-5">
-            <div className="w-[75%] min-w-slide max-w-slide mx-auto relative bg-gray px-[5%] py-5 overflow-scroll max-h-screen">
+            <div className="w-[75%] min-w-slide max-w-slide mx-auto relative bg-high-black px-[5%] py-5 overflow-scroll max-h-screen text-white">
                 <h1 className="text-3xl">SAFETY AGREEMENT</h1>
                 <hr></hr>
                 <p>I, the undersigned, acknowledge that I have voluntarily chosen to participate in a space experience provided by Astral. I understand that space travel is an inherently risky activity and involves potential hazards, including but not limited to, loss of life, physical injury, illness, property damage, and emotional trauma.</p>
@@ -141,7 +141,7 @@ function AgreementSlide(props){
                 <p>I have read this waiver of liability and assumption of risk and fully understand its contents. I acknowledge thatI am signing this document voluntarily and without any inducement, assurance, or guarantee being made to me.</p>
                 <br />
                 <p>BY CLICKING CONTINUE, YOU AGREE TO THE ABOVE TERMS</p>
-                <button onClick={props.advance} className="text-black px-4 py-2 text-xl border-solid border-black border-2 bg-current">CONTINUE</button>
+                <button onClick={props.advance} className="text-white px-4 py-2 text-xl border-solid border-white border-2 bg-current">CONTINUE</button>
             </div>
         </div>
     )
