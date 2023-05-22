@@ -1,12 +1,13 @@
 import "../../styles/home.css";
 import peanuts from "../../images/roasted-peanuts-jpg-1656535069.jpg";
+import space from "../../images/Space.mp4";
 import { VideoSlide, BackgroundImageSlide, TextSlide  } from "../organisms/Slides";
 import { TopMenu, HamburgerMenu, Footer } from "../organisms/NavElements";
 const Destinations = () => {
     return (
       <>
         <HamburgerMenu homeLink={"#root"} goLabel="FLY WITH US" />
-        <VideoSlide file="https://svs.gsfc.nasa.gov/vis/a010000/a013500/a013537/13537_Apollo13ViewsMoon4K_HDversion.webm" fit="menu" position="bottomLeft" main="DESTINATIONS" tagline="OH THE PLACES YOU'LL GO"/>
+        <VideoSlide file={space} fit="menu" position="bottomLeft" main="DESTINATIONS" tagline="OH THE PLACES YOU'LL GO"/>
         <TopMenu homeLink={"#root"} goLabel="FLY WITH US" />
         <TextSlide header="SO MANY PLACES" src={peanuts} paragraph={["At Astral, we offer a range of exciting space travel options for those who dream of venturing beyond our planet. Our primary package is a day trip aboard a space shuttle that takes you on a thrilling orbit around the Earth, providing a once-in-a-lifetime view of our planet from above. For our busy passengers, our space package allows passengers to visit space with minimal training required. For the ultimate space adventure, we offer a six-day trip where you will orbit the moon on a space station and have the opportunity to walk on the moon's surface on one of the days. These packages offer a unique opportunity for space enthusiasts to experience the wonder and excitement of space travel firsthand."]} />
         <BackgroundImageSlide label="BUY NOW" link="/booking" main="SPACE" background={`url(${peanuts}`} position="topLeft" description="With our space travel package, passengers are taken to space for gorgeous views of our planet and galaxy. Minimal training required." />
