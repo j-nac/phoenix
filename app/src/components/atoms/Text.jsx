@@ -19,7 +19,7 @@ function Subphrase1(props) {
 function BackgroundImageDescription(props){
     const reference = useOnScreen();
     return (
-        <p className="absolute top-1/2 -translate-y-1/2 right-12 text-light-gray text-2xl max-w-[24rem] ml-12"ref={reference}><span className="top-32 opacity-25 relative transition-all duration-500">{props.description}</span></p>
+        <p className="absolute top-1/2 -translate-y-1/2 right-12 text-light-gray text-2xl max-w-[24rem] ml-12" ref={reference}><span className="top-32 opacity-25 relative transition-all duration-500">{props.description}</span></p>
     )
 }
 function Quote(props){
@@ -34,13 +34,16 @@ function Title(props){
     return <p className="text-sm lg:text-base xl:text-xl text-purple ml-6 my-4 font-paragraph">{props.text}</p>
 }
 function QuoteHeader(props){
-    return <h1 className="text-white text-center text-6xl md:text-9xl pt-2 mt-12 font-heading">{props.text}</h1>
+    const reference = useOnScreen();
+    return <h1 className="text-white text-center text-6xl md:text-9xl pt-2 mt-12 font-heading"ref={reference}><span className="top-32 opacity-25 relative transition-all duration-500">{props.text}</span></h1>
 }
 function Subphrase2(props){
-    return <h2 className="text-base pt-5 px-3 text-light-gray font-paragraph">{props.text}</h2>
+    const reference = useOnScreen();
+    return <h2 className="text-base pt-5 px-3 text-light-gray font-paragraph" ref={reference}><span className="top-32 opacity-25 relative transition-all duration-500">{props.text}</span></h2>
 }
 function Header2(props){
-    return <h1 className="text-6xl px-3 text-white font-heading appear">{props.text}</h1>
+    const reference = useOnScreen();
+    return <h1 className="text-6xl px-3 text-white font-heading appear" ref={reference}><span className="top-32 opacity-25 relative transition-all duration-500">{props.text}</span></h1>
 }
 function Paragraph(props){
     let text = [];
@@ -53,7 +56,8 @@ function Paragraph(props){
 }
 
 function Header3(props){
-    return <h1 className="text-5xl px-3 text-white text-right font-heading appear">{props.text}</h1>
+    const reference = useOnScreen();
+    return <h1 className="text-5xl px-3 text-white text-right font-heading appear" ref={reference}><span className="top-32 opacity-25 relative transition-all duration-500">{props.text}</span></h1>
 }
 
 function ImageText(props){
@@ -63,14 +67,17 @@ function ImageText(props){
     return <h1 className = {cl}>{props.text}</h1>
 }
 function Subphrase3(props){
-    return <h2 className="text-lg pt-5 px-3 text-light-gray font-paragraph text-right appear">{props.text}</h2>
+    const reference = useOnScreen();
+    return <h2 className="text-lg pt-5 px-3 text-light-gray font-paragraph text-right appear" ref={reference}><span className="top-32 opacity-25 relative transition-all duration-500">{props.text}</span></h2>
 }
 
 function Header4(props){
-    return <h1 className="inline-block text-5xl font-heading pr-3 text-white">{props.text}</h1>
+    const reference = useOnScreen();
+    return <h1 className="inline-block text-5xl font-heading pr-3 text-white" ref={reference}><span className="top-32 opacity-25 relative transition-all duration-500">{props.text}</span></h1>
 }
 function Subphrase4(props){
-    return <p className="inline-block text-2xl font-heading px-4 text-light-gray">{props.text}</p>
+    const reference = useOnScreen();
+    return <p className="inline-block text-2xl font-heading px-4 text-light-gray" ref={reference}><span className="top-32 opacity-25 relative transition-all duration-500">{props.text}</span></p>
 }
 
 function CardText(props){
