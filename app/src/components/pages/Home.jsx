@@ -1,5 +1,4 @@
 import "../../styles/home.css";
-import peanuts from "../../images/roasted-peanuts-jpg-1656535069.jpg";
 import rocket1 from "../../images/Optimized-spacex-uj3hvdfQujI-unsplash.jpg"
 import moon1 from "../../images/Optimized-nicolas-thomas-wKlqqfNTLsI-unsplash.jpg"
 import spacemont from "../../images/Optimized-space-montage.mp4"
