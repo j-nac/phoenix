@@ -5,6 +5,7 @@ import moon1 from "../../images/Optimized-nicolas-thomas-wKlqqfNTLsI-unsplash.jp
 import spacemont from "../../images/Optimized-space-montage.mp4"
 import people1 from "../../images/Optimized-christina-wocintechchat-com-faEfWCdOKIg-unsplash.jpg"
 import training1 from "../../images/s84-36901~medium.jpg"
+import blah from "../../images/martin-jaros-osAeymdDVyk-unsplash.jpg"
 import { VideoSlide, BackgroundImageSlide, QuoteSlide  } from "../organisms/Slides";
 import { TopMenu, HamburgerMenu, Footer } from "../organisms/NavElements";
 import { useEffect } from "react";
@@ -19,7 +20,7 @@ const Home = () => {
         <TopMenu homeLink={"#root"} goLabel="FLY WITH US" />
         <BackgroundImageSlide main="SPACESHIPS" sub="Ride in Comfort" label="LEARN MORE" link="/#/ships" background={`linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${rocket1}`} position="bottomLeft" />
         <BackgroundImageSlide main="DESTINATIONS" label="LEARN MORE" link="/#/destinations" background={`url(${moon1}`} position="topLeft" description="See the moon closer than ever before with our first-class lunar experience"/>
-        <QuoteSlide quote="Astral lies at the bleeding edge of innovation, bringing science fiction to life." author="Aaron Donson" title="Former NASA engineer and technology editor of the Springfield Inquirer" image={peanuts} header="A Revolution in Travel"/>
+        <QuoteSlide quote="Astral lies at the bleeding edge of innovation, bringing science fiction to life." author="Aaron Donson" title="Former NASA engineer and technology editor of the Springfield Inquirer" image={blah} header="A Revolution in Travel"/>
         <BackgroundImageSlide main="TRAINING" label="LEARN MORE" link="/#/training" background={`linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${training1}`} position="topLeft" description="Common diving training in our world class facility in Telluride, CO" />
         <BackgroundImageSlide main="ABOUT US" sub="You Are Our Mission" label="LEARN MORE" link="/#/about" background={`linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${people1}`} position="bottomLeft" />
         <Footer />
